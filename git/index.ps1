@@ -1,0 +1,1 @@
+. "$ProfileHOME\git\deploy.ps1"

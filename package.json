@@ -1,0 +1,16 @@
+{
+  "name": "WindowsPowerShell",
+  "version": "1.0.0",
+  "description": "Using $profile for all windows environments",
+  "main": "index.ps1",
+  "scripts": {
+    "deploy": "git add . && git commit -m '.'"
+  },
+  "keywords": [],
+  "author": "Jalal Hejazi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://git.itacademy.dk/cloud/windowspowershell.git"
+  }
+}
