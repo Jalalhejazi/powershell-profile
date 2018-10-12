@@ -24,5 +24,7 @@ cd ${Env:USERPROFILE}\Documents
 
 git clone https://git.itacademy.dk/cloud/windowspowershell.git WindowsPowerShell
 
+exit
 
 ```
+

@@ -1,6 +1,6 @@
 
 ## Using scoop.sh (the missing apt-get install for windows)
-function tools-install-all {
+function tools-install-development {
     scoop install git 
     scoop install 7zip 
     scoop install sudo 
@@ -32,4 +32,15 @@ function tools-update-all {
 
 function tools-help {
    scoop  --help 
+}
+
+
+function tools-list {
+    scoop list
+}
+
+function please-make-my-life-easy {
+    ## ref.: https://github.com/sindresorhus/awesome-nodejs
+     
+    npm --global install fkill-cli rimraf empty-trash-cli pen live-server http-server is-online-cli is-up-cli clipboard-cli 
 }
