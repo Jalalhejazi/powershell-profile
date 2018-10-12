@@ -6,11 +6,11 @@ function get-public-IP-address {
 
 
 function get-private-IP-address {
-
 # Works for Linux, MacOS and Windows
 # When using cross-platform powershell (pwsh)
 
-# start pwsh first
+## ipconfig | grep IPv4 | sort
+
 
 $IP = if ($IsLinux -or $IsMacOS) {
     $ipInfo = ifconfig | Select-String 'inet'

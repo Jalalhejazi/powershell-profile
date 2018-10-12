@@ -42,5 +42,5 @@ function tools-list {
 function please-make-my-life-easy {
     ## ref.: https://github.com/sindresorhus/awesome-nodejs
      
-    npm --global install fkill-cli rimraf empty-trash-cli pen live-server http-server is-online-cli is-up-cli clipboard-cli 
+    npm --global install fkill-cli kill-tabs rimraf empty-trash-cli pen speed-test live-server http-server is-online-cli is-up-cli clipboard-cli cash-global 
 }
