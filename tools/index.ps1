@@ -30,6 +30,6 @@ function tools-update-all {
 }
 
 
-function tool-help {
+function tools-help {
    scoop  --help 
 }
