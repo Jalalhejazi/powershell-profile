@@ -11,3 +11,4 @@
 . "$ProfileHOME\docker\index.ps1"
 . "$ProfileHOME\json\index.ps1"
 . "$ProfileHOME\tools\index.ps1"
+. "$ProfileHOME\profile\index.ps1"
