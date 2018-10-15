@@ -1,4 +1,4 @@
-function get-password{
+function get-azure-secret{
     param(
         $secretName,
         $vaultName   
@@ -8,7 +8,7 @@ function get-password{
 }
 
 
-function set-password{
+function new-azure-secret{
     param(
         $secretName,
         $secretValue,
