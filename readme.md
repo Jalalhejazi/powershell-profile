@@ -22,9 +22,24 @@ Using $profile for any Windows environments
 ```
 cd ${Env:USERPROFILE}\Documents
 
-git clone https://git.itacademy.dk/cloud/windowspowershell.git WindowsPowerShell
+git clone https://git.itacademy.dk/cloud/windowspowershell.git
 
 exit
 
 ```
+
+
+
+
+## Profile get latest version 
+
+```
+profile-update
+
+```
+
+
+
+
+
 
