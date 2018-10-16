@@ -2,7 +2,7 @@
 ## You can change sa_password here 
 ## Or use any secret-store like 'azure key-vault'
 
-$sa_password = 'YourSaPa$$w0rd'
+$sa_password = 'Djakp88t'
 
 function get-microservice-sqlserver{
     $img = "jalalhejazi/microservice_sqlserver"
@@ -20,3 +20,11 @@ function get-microservice-sqlserver{
     $cmd03
 }
 
+
+function get-container-webapp{
+    $img = "jalalhejazi/container-webapp"
+
+    docker pull $img
+    docker run -d -p "1234:8080" $img
+    docker container ls
+}

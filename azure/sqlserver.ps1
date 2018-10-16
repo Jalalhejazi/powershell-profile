@@ -2,6 +2,9 @@
 
 function new-azure-sqlserver{
 
+    Import-Module AzureRM.*
+    
+
     param(
         $aliaspace              = 'superusers' ,       
         $namespace              = '20181016'   
