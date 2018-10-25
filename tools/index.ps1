@@ -9,13 +9,10 @@ function tools-install-development {
     scoop install rsync 
     scoop install sublime-text 
     scoop install vscode 
-<# 
     scoop install win32-openssh 
     scoop install azure-cli 
-    scoop install dotnet-sdk 
-    scoop install concfg 
-#>
-
+ 
+    # scoop install concfg 
 }
 
 function tools-update-all {
@@ -24,7 +21,7 @@ function tools-update-all {
  scoop  help update
 #>
     scoop update 
-    scoop update * --force --quit
+    scoop update * --force --quiet
 }
 
 
