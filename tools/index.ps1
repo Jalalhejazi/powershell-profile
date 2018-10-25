@@ -1,4 +1,3 @@
-
 ## Using scoop.sh (the missing apt-get install for windows)
 function tools-install-development {
     scoop install git 
@@ -8,14 +7,13 @@ function tools-install-development {
     scoop install vim 
     scoop install gow 
     scoop install rsync 
-
+    scoop install sublime-text 
+    scoop install vscode 
 <# 
     scoop install win32-openssh 
     scoop install azure-cli 
     scoop install dotnet-sdk 
     scoop install concfg 
-    scoop install sublime-text 
-    scoop install vscode 
 #>
 
 }
