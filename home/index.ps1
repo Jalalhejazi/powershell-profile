@@ -4,6 +4,11 @@ function goto-home {
 }
 
 
+function goto-kursus {
+  cd "$ProfileHOME/kursus/"
+}
+
+
 function goto-c {
   cd "c:\"
 }
