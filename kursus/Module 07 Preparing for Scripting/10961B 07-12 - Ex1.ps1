@@ -35,4 +35,5 @@ Get-Help New-SelfSignedCertificate -Examples
 # How to sign program.ps1 with Certificate?
 Get-Help AuthenticodeSignature -Examples
 
+
 Set-AuthenticodeSignature -FilePath program.ps1 -Certificate $cert

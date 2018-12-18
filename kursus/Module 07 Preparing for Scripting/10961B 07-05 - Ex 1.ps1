@@ -4,7 +4,8 @@ $today = Get-Date
 
 # Hvad har vi nu i $today (med std. format visning) 
 
-$today
+$today 
+$today | select *
 
 # Hvis man f.eks kun vil have ugedagen (som ikke bliver vist i std. visning)
 
