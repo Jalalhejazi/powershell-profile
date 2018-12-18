@@ -9,7 +9,7 @@
 
 ### Liste af ComputerNames
 
-## "Offline", "localhost" , "127.0.0.1" , $env:COMPUTERNAME | Out-File ./pc.txt
+"Offline", "localhost" , "127.0.0.1" , $env:COMPUTERNAME | Out-File ./pc.txt
 
 $data = Get-Content .\pc.txt 
 
