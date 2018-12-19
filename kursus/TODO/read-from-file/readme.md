@@ -11,8 +11,12 @@
     help ConvertFrom-Json -Examples
 
    	$products =  (Get-Content .\products.json) -join "`n" | ConvertFrom-Json
-   	$products.products[0]
-   	$products.products[1]
+   	$rowNr = 0
+    $products.products[$rowNr].productID
+   	$products.products[$rowNr].productName
+
+    ## Her kan ForEach på en Array også bruges !!
+    $products.products.ForEach()
 
 
 3. Beregn hvor mange rækker er der i filen?
