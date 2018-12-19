@@ -1,40 +1,51 @@
-## Kursus MS 10961
+## Kursus MS10961 (Version-C)
 
 
 ```
-Microsoft 10961  (5 dage)
+Microsoft  10961  (5 dage)
 ==========================
 SuperUsers SU0530 (3 dage) 
 SuperUsers SU0531 (2 dage)
+
 ```
 
+## Mandag 
+MS10961
+SU0530
 
-## Mandag
+* 01-Getting started with Windows PowerShell
+* 02-Cmdlets for administration
 
-* Module 1: Getting Started with Windows PowerShell
-* Module 2: Working with the Pipeline
 
 ## Tirsdag
+MS10961
+SU0530
 
-* Module 3: Understanding How the Pipeline Works
-* Module 7: Preparing for Scripting
+* 03-Working with the Windows PowerShell pipeline
+* 04-Understanding how the pipeline works
+
 
 ## Onsdag
+MS10961
+SU0530
 
-* Module 8: Moving From a Command to a Script to a Module
-* Module 12: Using Advanced PowerShell Techniques and Profiles
+* 07-Working with variables, arrays, and hash tables
+* 08-Basic scripting and 09-Advanced scripting
+
 
 ## Torsdag
+MS10961
+SU0531
 
-* Module 4: Using PSProviders and PSDrives
-* Module 5: Formatting Output
-* Module 6: Using WMI and CIM
+* 05-Using PSProviders and PSDrives
+* 06-Querying management information by using CIM and WMI
+
 
 ## Fredag
+MS10961
+SU0531
 
-* Module 9: Administering Remote Computers
-* Module 10: Putting it All Together
-* Module 11: Using Background Jobs and Scheduled Jobs
-
-
+* 10-Administering remote computers
+* 11-Using background jobs and scheduled jobs
+* 12-Using advanced Windows PowerShell techniques
 
