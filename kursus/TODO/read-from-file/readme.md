@@ -16,8 +16,11 @@
    	$products.products[$rowNr].productName
 
     ## Her kan ForEach på en Array også bruges !!
-    $products.products.ForEach()
 
+    $products.products.ForEach( {"$_"} )
+
+    $products.products.ForEach( {"$($_.productName)"} )
+   
 
 3. Beregn hvor mange rækker er der i filen?
 
