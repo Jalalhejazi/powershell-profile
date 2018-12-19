@@ -1,5 +1,10 @@
 ## Add Modules to env:PSModulePath
-$env:PSModulePath = $env:PSModulePath + ";$ProfileHome/Modules/"
+
+$env:PSModulePath += ";$ProfileHome/Modules/"
+
+function profile-ModulePath {
+    (cat Env:\PSModulePath) -split ";"
+}
 
 
 
