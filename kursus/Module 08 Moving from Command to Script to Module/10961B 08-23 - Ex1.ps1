@@ -19,5 +19,7 @@
     $MyErr += $msg
 
     $MyErr | Out-File .\fejl.log
+
+    ## evt. se Logstash på nettet
 }
 
