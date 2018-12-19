@@ -14,14 +14,20 @@
 
 ## nedarvning fra dotnet frameworket
 
-Param(
+function hent-mineLogs() 
+{
+    [CmdletBinding()]    
+    Param(
 
-[string]$ComputerName = 'localhost',
+    [string]$ComputerName = '.',
 
-[int]$EventID = 4624
-)
-Get-EventLog -LogName Security -ComputerName $ComputerName |
-Where EventID -eq $EventID |
-Select -First 50
+    [int]$EventID = 4624
+    )
+    
 
-###  step 2
+    Get-EventLog -LogName Security -ComputerName $ComputerName |
+    Where EventID -eq $EventID |
+    Select -First 50
+
+    ###  step 2
+}

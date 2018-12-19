@@ -29,8 +29,11 @@ The name of the computer to query.
 [CmdletBinding()]
 
 Param(
-    [Parameter(Mandatory=$True)]
-    [string]$ComputerName
+    
+     [parameter(Mandatory=$true)]
+     [alias("CN","MachineName")]
+     [String[]]
+    $ComputerName
 )
 
 
