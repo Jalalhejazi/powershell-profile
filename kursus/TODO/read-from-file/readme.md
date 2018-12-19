@@ -8,7 +8,7 @@
 
 2. Filen er json format, derfor undersøg 'ConvertFrom-JSON'
    
-   help ConvertFrom-Json -Examples
+    help ConvertFrom-Json -Examples
 
    	$products =  (Get-Content .\products.json) -join "`n" | ConvertFrom-Json
    	$products.products[0]
