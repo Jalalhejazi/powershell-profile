@@ -1,8 +1,11 @@
 ﻿#Create new folder
-New-Item C:\test -ItemType Directory
+
+$path = "$ProfileHome\Test01"
+
+New-Item $path -ItemType Directory
 
 #view acl for new folder
-$acl = Get-Acl C:\test
+$acl = Get-Acl $path
 $acl
 $acl.AccessToString
 $acl.Access
@@ -22,7 +25,7 @@ $rule = New-Object System.Security.AccessControl.FileSystemAccessRule('Administr
 $acl.AddAccessRule($rule)
 
 #Apply the new ACL
-Set-ACL C:\Test -AclObject $acl
+Set-ACL $path -AclObject $acl
 
 #Verify that permissions were modified
-Get-Acl C:\test | fl
+Get-Acl $path | fl

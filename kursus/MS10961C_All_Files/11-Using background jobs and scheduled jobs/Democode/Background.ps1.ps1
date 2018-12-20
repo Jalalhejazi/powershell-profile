@@ -8,7 +8,8 @@ Enable-PSRemoting
 Start-Job –ScriptBlock { Dir C:\ -Recurse } –Name LocalDir
 
 # 2
-Invoke-Command –ScriptBlock { Get-EventLog –LogName Security –Newest 100 } –ComputerName LON-CL1,LON-DC1 –JobName RemoteLogs
+$PC = 'LON-CL1','LON-DC1'
+Invoke-Command –ScriptBlock { Get-EventLog –LogName Security –Newest 100 } –ComputerName $PC –JobName RemoteLogs
 
 # 3
 Get-Job

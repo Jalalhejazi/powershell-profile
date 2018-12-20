@@ -2,7 +2,7 @@
 #This example is similar to -like "*large*"
 "A large string" -match "large"
 
-#A period (dot) is one  of any character
+#A period (dot) is one of any character
 "LON-DC1" -match "LON-DC."
 "LON-DC" -match "LON-DC."
 
