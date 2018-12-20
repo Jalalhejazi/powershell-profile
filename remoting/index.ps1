@@ -3,6 +3,9 @@
     .EXAMPLE
     windows-remote-connect -ComputerName jalal-pc.su.int -UserName su\jalal
 
+    .EXAMPLE
+    windows-remote-connect -ComputerName jalal-pc.su.int -UserName su\jalal -config
+
 #>
 
 function windows-remote-connect {
@@ -10,11 +13,15 @@ function windows-remote-connect {
     param(
         
         [Parameter(Mandatory = $true)] [string] $ComputerName ,
-        [Parameter(Mandatory = $true)] [string] $UserName    
+        [Parameter(Mandatory = $true)] [string] $UserName   ,
+        [Parameter(Mandatory = $false)][switch] $config    
     )
 
-    # Enable-PSRemoting -SkipNetworkProfileCheck -Force
-    # set-item wsman:\localhost\Client\TrustedHosts -value * -Force
+    if ($config) {
+     Enable-PSRemoting -SkipNetworkProfileCheck -Force
+     set-item wsman:\localhost\Client\TrustedHosts -value * -Force
+    }
+
 
     $login  = New-PSSession -Credential $UserName -ComputerName $ComputerName
 
