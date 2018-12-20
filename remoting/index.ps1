@@ -17,6 +17,8 @@ function windows-remote-connect {
         [Parameter(Mandatory = $true)] [string] $UserName   ,
         [Parameter(Mandatory = $false)][switch] $setup    
     )
+    
+    $ErrorActionPreference = 'SilentlyContinue'
 
     if ($setup) {
      Enable-PSRemoting -SkipNetworkProfileCheck -Force
