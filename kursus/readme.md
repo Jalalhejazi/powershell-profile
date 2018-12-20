@@ -39,13 +39,13 @@ SU0531
 
 * 05-Using PSProviders and PSDrives
 * 06-Querying management information by using CIM and WMI
+* 10-Administering remote computers
 
 
 ## Fredag
 MS10961
 SU0531
 
-* 10-Administering remote computers
 * 11-Using background jobs and scheduled jobs
 * 12-Using advanced Windows PowerShell techniques
 
