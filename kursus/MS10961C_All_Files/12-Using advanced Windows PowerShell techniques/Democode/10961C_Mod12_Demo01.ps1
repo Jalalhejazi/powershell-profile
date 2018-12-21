@@ -1,10 +1,14 @@
+## 1950 --> compiler fra et sprog til andet sprog
+## https://regexr.com/
+
+
 #The -match operator is always looking for substrings
 #This example is similar to -like "*large*"
 "A large string" -match "large"
 
 #A period (dot) is one of any character
 "LON-DC1" -match "LON-DC."
-"LON-DC" -match "LON-DC."
+"LON-DCx" -match "LON-DC."
 
 #A question mark is zero or one of any character
 "LON-DC1" -match "LON-DC?"
