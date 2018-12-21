@@ -47,5 +47,7 @@ MS10961
 SU0531
 
 * 11-Using background jobs and scheduled jobs
+ (30 min)
+ 
 * 12-Using advanced Windows PowerShell techniques
 

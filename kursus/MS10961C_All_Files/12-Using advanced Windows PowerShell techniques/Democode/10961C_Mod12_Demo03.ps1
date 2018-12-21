@@ -1,31 +1,30 @@
-﻿#Create new folder
+﻿
+function Set-AccessControl-demo-only {
+    param(
+        $folder     = "$ProfileHome\Test02",
+        $myGroup    = "NETWORK SERVICE" 
+    )
 
-$path = "$ProfileHome\Test01"
+    Remove-Item $folder -Recurse -Force 
+    New-Item $folder -ItemType Directory -Force
+     
+    $acl = Get-Acl $folder
 
-New-Item $path -ItemType Directory
+    $rule = New-Object System.Security.AccessControl.FileSystemAccessRule("$myGroup", "ReadData", "ContainerInherit, ObjectInherit", "None", "Allow")
+    $acl.AddAccessRule($rule)
 
-#view acl for new folder
-$acl = Get-Acl $path
-$acl
-$acl.AccessToString
-$acl.Access
+    #$rule = New-Object System.Security.AccessControl.FileSystemAccessRule("$myGroup", "CreateFiles", "ContainerInherit, ObjectInherit", "None", "Allow")
+    #$acl.AddAccessRule($rule)
 
-#View all properties and methods for an ACL
-$acl | Get-Member
+    #$rule = New-Object System.Security.AccessControl.FileSystemAccessRule("$myGroup", "AppendData", "ContainerInherit, ObjectInherit", "None", "Allow")
+    #$acl.AddAccessRule($rule)
+  
+    #################################
+    Set-Acl $folder $acl
+    #################################
 
-#Set the folder to disable inherited permissions
-#and remove inherited permissions
-$acl.SetAccessRuleProtection($true,$false)
+    $permission = Get-Acl $folder
+    
+    write-output $permission 
 
-#Create a new rule that gives Administrators Full Control
-#Permissions are inherited by files and subfolders
-$rule = New-Object System.Security.AccessControl.FileSystemAccessRule('Administrators','FullControl', 'ContainerInherit', 'ObjectInherit', 'None', 'Allow')
-
-#Add the rule to the ACL
-$acl.AddAccessRule($rule)
-
-#Apply the new ACL
-Set-ACL $path -AclObject $acl
-
-#Verify that permissions were modified
-Get-Acl $path | fl
+}
