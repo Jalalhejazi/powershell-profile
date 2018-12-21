@@ -1,14 +1,13 @@
 ﻿
 <#
-    .EXAMPLES
-    Set-AccessControl-demo-only | SELECT * 
+.EXAMPLE
+Set-AccessControl-demo-only | SELECT * 
 
-    .EXAMPLES
-    $x = Set-AccessControl-demo-only 
-    $x | select * 
+.EXAMPLE
+$x = Set-AccessControl-demo-only 
+$x | select * 
 
 #>
-
 function Set-AccessControl-demo-only {
     param(
         $folder     = "$ProfileHome\Test02",
