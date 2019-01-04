@@ -12,3 +12,4 @@
 . "$ProfileHOME\json\index.ps1"
 . "$ProfileHOME\tools\index.ps1"
 . "$ProfileHOME\profile\index.ps1"
+. "$ProfileHOME\remoting\index.ps1"
