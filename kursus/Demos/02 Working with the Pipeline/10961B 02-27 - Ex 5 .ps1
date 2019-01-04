@@ -1,1 +1,0 @@
-Get-Service | Where { $PSItem.Name.Length -gt 8 }
