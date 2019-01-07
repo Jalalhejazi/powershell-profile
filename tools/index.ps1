@@ -39,3 +39,8 @@ function please-make-my-life-easy {
      
     npm --global install fkill-cli kill-tabs rimraf empty-trash-cli pen speed-test live-server http-server is-online-cli is-up-cli clipboard-cli 
 }
+
+function web-development {
+
+    npm install --global @angular/cli typescript 
+}
