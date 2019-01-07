@@ -1,7 +1,0 @@
-## start 
-
-```
-npm run start
-```
-
-
