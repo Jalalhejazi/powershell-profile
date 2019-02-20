@@ -7,7 +7,7 @@ param(
     $appName            = "demo-webapp-2019",
     $sqlServerName      = "sqlserver2019",
     $databaseName       = "SnippetsDatabase",
-    $sqlServerUsername  
+    $sqlServerUsername  ,
     $sqlServerPassword   
 )
 
