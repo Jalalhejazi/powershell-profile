@@ -21,7 +21,7 @@ function get-vejret-dk {
     )
 
     $remoteAddress = "http://vejr.eu/api.php?location=$byNavn&degree=C"
-    $data    = (Invoke-RestMethod -Uri $remoteAddress).pre | convertFrom-Json
+    $data    = Invoke-RestMethod -Uri $remoteAddress
 
     write-output $data
 }
