@@ -13,3 +13,4 @@
 . "$ProfileHOME\tools\index.ps1"
 . "$ProfileHOME\profile\index.ps1"
 . "$ProfileHOME\remoting\index.ps1"
+. "$ProfileHOME\kursus\index.ps1"
