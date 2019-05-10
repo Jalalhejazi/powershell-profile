@@ -30,5 +30,5 @@ function goto-temp  {
 ## Create New-PSDrive E pointing to Allfiles
 ## New-PSDrive -Name "E" -PSProvider "FileSystem" -Root "$ProfileHOME/kursus/MS10961C_All_Files" 
 
-goto-home
+goto-dev
 
