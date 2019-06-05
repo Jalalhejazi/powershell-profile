@@ -22,7 +22,7 @@ Using $profile for any Windows environments
 ```
 cd ${Env:USERPROFILE}\Documents
 
-git clone https://git.itacademy.dk/cloud/windowspowershell.git
+git clone https://superusers-kursus@dev.azure.com/superusers-kursus/windowspowershell/_git/windowspowershell
 
 exit
 
