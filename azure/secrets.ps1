@@ -1,9 +1,8 @@
 function get-azure-secret{
     param(
-        $secretName,
-        $vaultName="$keyvault" 
+        $secretName
     )
-    $myPassword=(az keyvault secret show --vault-name $vaultName --name $secretName --query "value" --output tsv)
+    $myPassword=(az keyvault secret show --vault-name $keyvault --name $secretName --query "value" --output tsv)
     return $myPassword
 }
 
@@ -11,9 +10,8 @@ function get-azure-secret{
 function new-azure-secret{
     param(
         $secretName,
-        $secretValue,
-        $vaultName="$keyvault" 
+        $secretValue
     )
-    az keyvault secret set --vault-name $vaultName   --name $secretName --value $secretValue
+    az keyvault secret set --vault-name $keyvault   --name $secretName --value $secretValue
 }
 
