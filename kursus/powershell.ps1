@@ -27,6 +27,3 @@ function get-jh-kursister {
     $data | select kursistID, person_Navn, firma_navn  
 
 }
-
-
-get-jh-kursister -kursusNummer su0095 -dato (Get-Date -Format "yyyyMMdd")
