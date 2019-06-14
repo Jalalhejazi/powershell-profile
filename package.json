@@ -4,7 +4,7 @@
   "description": "Using $profile for all windows environments",
   "main": "index.ps1",
   "scripts": {
-    "deploy": "git add . && git commit -m '.' && git push "
+    "deploy": "git add . && git commit -m '.'"
   },
   "keywords": [],
   "author": "Jalal Hejazi",
