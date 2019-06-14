@@ -46,3 +46,12 @@ function get-temperatur-dk {
     
     write-output "$byNavn ($temperatur) "
 }
+
+
+
+function get-weather {
+    npm install --global cli-weather
+    weather -c
+}
+
+
