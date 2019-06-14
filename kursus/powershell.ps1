@@ -24,12 +24,6 @@ function get-jh-kursister {
 
     $data = (Invoke-RestMethod -Uri $remoteAddress).data
 
-   <# 
-    foreach ($d in $data) {
-        write-output ("`n", $d.person_Navn ,  $d.firma_navn)
-    }
-    #>
-
     $data | select kursistID, person_Navn, firma_navn
 
 }
