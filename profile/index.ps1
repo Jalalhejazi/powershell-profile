@@ -21,3 +21,11 @@ function profile-push {
     cd $ProfileHOME
     npm run deploy 
 }
+
+
+function profile-setup {
+    cd ${Env:USERPROFILE}\Documents
+    rimraf ./windowspowershell
+    git clone https://superusers-kursus@dev.azure.com/superusers-kursus/windowspowershell/_git/windowspowershell
+    exit
+}
