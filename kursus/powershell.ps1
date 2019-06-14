@@ -24,6 +24,6 @@ function get-jh-kursister {
 
     $data = (Invoke-RestMethod -Uri $remoteAddress).data
 
-    $data | select kursistID, person_Navn, firma_navn
+    $data | select kursistID, person_Navn, firma_navn  
 
 }
