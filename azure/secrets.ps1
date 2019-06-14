@@ -15,3 +15,6 @@ function new-azure-secret{
     az keyvault secret set --vault-name $keyvault   --name $secretName --value $secretValue
 }
 
+
+
+# $access_token=get-azure-secret -secretName devops
