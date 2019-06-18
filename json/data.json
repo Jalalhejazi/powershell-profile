@@ -1,6 +1,7 @@
 
 [
-    {"personNavn":"Jalal","personTitel":"Trainer","adresse":{"vejNavn":"skolevej","husNummer":"1","postNummer":"1000"}},
-    {"personNavn":"Thomas","personTitel":"Trainer","adresse":{"vejNavn":"her paa jorden","husNummer":"1","postNummer":"1000"}}
-
+    {"personNavn":"Jalal","personTitel":"Trainer","adresse":{"vejNavn":"skolevej","husNummer":"100","postNummer":"1000"}},
+    {"personNavn":"Thomas","personTitel":"dev","adresse":{"vejNavn":"t-vej","husNummer":"200","postNummer":"2000"}},
+    {"personNavn":"Peter","personTitel":"test","adresse":{"vejNavn":"p-vej","husNummer":"300","postNummer":"3000"}},
+    {"personNavn":"Johannes","personTitel":"admin","adresse":{"vejNavn":"j-vej","husNummer":"400","postNummer":"4000"}}
 ]
