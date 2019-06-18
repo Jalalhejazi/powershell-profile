@@ -1,0 +1,6 @@
+
+[
+    {"personNavn":"Jalal","personTitel":"Trainer","adresse":{"vejNavn":"skolevej","husNummer":"1","postNummer":"1000"}},
+    {"personNavn":"Thomas","personTitel":"Trainer","adresse":{"vejNavn":"her paa jorden","husNummer":"1","postNummer":"1000"}}
+
+]
