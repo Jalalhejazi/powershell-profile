@@ -6,7 +6,8 @@
 #>
 
 # data kan også komme fra internet via REST API Services
-$data = Get-Content './data.json' | ConvertFrom-Json 
+$filensIndhold =  Get-Content './data.json'
+$data = $filensIndhold | ConvertFrom-Json 
 
 foreach ($x in $data) {
     $x | Select-Object  personNavn, 
