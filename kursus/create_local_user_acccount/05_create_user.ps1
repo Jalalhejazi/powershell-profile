@@ -1,5 +1,5 @@
 function New-LocalUser {
-<#
+    <#
     .SYNOPSIS
     Creates a local user account.
 
