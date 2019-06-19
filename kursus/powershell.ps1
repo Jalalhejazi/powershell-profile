@@ -8,8 +8,12 @@ function get-jh-kursister {
 
     .EXAMPLE
         
-        get-jh-kursister -kursusNummer su0530 -dato 20190617
-        get-jh-kursister -kursusNummer ms0961 -dato 20190617
+        $k_3dage = get-jh-kursister -kursusNummer su0530 -dato 20190617
+        $k_2dage = get-jh-kursister -kursusNummer su0531 -dato 20190617
+        $k_5dage = get-jh-kursister -kursusNummer ms0961 -dato 20190617
+
+        $k_5dage + $k_2dage | sort firma_navn
+
 
 #>
 
