@@ -11,6 +11,7 @@ $data = Get-Content './data.json' | ConvertFrom-Json
 foreach ($x in $data) {
     $x | Select-Object  personNavn, 
                         personTitel , 
-                        @{Expression={$PSItem.adresse.vejnavn + ' ' + $PSItem.adresse.husNummer}; Name="vejNavn"},
-                        @{Expression={$PSItem.adresse.postNummer}  ; Name="postNummer"}
+                        @{Expression={$PSItem.adresse.vejnavn + ' ' + $PSItem.adresse.husNummer}; Name="VejNavn"},
+                        @{Expression={$PSItem.adresse.postNummer}  ; Name="PostNummer"}
+                        
 } 

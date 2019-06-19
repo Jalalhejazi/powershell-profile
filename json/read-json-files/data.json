@@ -4,4 +4,5 @@
     {"personNavn":"Thomas","personTitel":"dev","adresse":{"vejNavn":"vejnavn","husNummer":"200","postNummer":"2000"}},
     {"personNavn":"Peter","personTitel":"test","adresse":{"vejNavn":"vejnavn","husNummer":"300","postNummer":"3000"}},
     {"personNavn":"Johannes","personTitel":"admin","adresse":{"vejNavn":"vejnavn","husNummer":"400","postNummer":"4000"}}
+
 ]
