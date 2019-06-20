@@ -1,10 +1,6 @@
 <#
 
     .EXAMPLE
-    
-    For workgroup network
-
-    Get-NetConnectionProfile | Set-NetConnectionProfile -NetworkCategory Private
     windows-remote-connect -ComputerName 192.168.8.101 -UserName kursist -setup
     
     
@@ -26,6 +22,7 @@ function windows-remote-connect {
     $ErrorActionPreference = 'SilentlyContinue'
 
     if ($setup) {
+     Get-NetConnectionProfile | Set-NetConnectionProfile -NetworkCategory Private
      Enable-PSRemoting -SkipNetworkProfileCheck -Force
      set-item wsman:\localhost\Client\TrustedHosts -value * -Force
     }
