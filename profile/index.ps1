@@ -29,3 +29,11 @@ function profile-setup {
     git clone https://superusers-kursus@dev.azure.com/superusers-kursus/windowspowershell/_git/windowspowershell
     exit
 }
+
+
+
+New-PSDrive -Name profile -PSProvider FileSystem -Root $profileHome 
+New-PSDrive -Name kursus -PSProvider FileSystem -Root "$profileHome/kursus" 
+New-PSDrive -Name opgaver -PSProvider FileSystem -Root "$profileHome/kursus/opgaver"
+
+profile-update
