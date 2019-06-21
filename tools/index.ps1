@@ -6,12 +6,11 @@ function tools-install-development {
     scoop install touch
     scoop install vim 
     scoop install gow 
-    scoop install rsync 
-    scoop install sublime-text 
     scoop install vscode 
     scoop install win32-openssh 
     scoop install azure-cli 
- 
+    scoop install pwsh
+
     # scoop install concfg 
 }
 
