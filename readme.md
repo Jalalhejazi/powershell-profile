@@ -40,6 +40,8 @@ profile-update
 
 
 
+## How to setup windows first time
 
+[link](firstTime.md)
 
 
