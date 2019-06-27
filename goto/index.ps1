@@ -15,34 +15,35 @@ function goto-dev {
 $HOMEPAGE = 'https://www.superusers.dk'
 
 function goto-superusers {
-  chrome "$HOMEPAGE/"
+  chrome incognito "$HOMEPAGE/"
 }
 
 function goto-evaluering {
-  chrome "http://eval.superusers.dk/"
+  chrome --incognito "http://eval.superusers.dk/"
 }
 
 function goto-superusers-kursus {
   param($kursusNummer)
-  chrome "$HOMEPAGE/kursus/$kursusNummer"
+  chrome --incognito "$HOMEPAGE/kursus/$kursusNummer"
 }
 
 function goto-azure-portal {
-  chrome 'https://portal.azure.com/'
+  chrome --incognito 'https://portal.azure.com/'
 }
 
 
 function goto-azure-shell {
-  chrome 'https://shell.azure.com/'
+  chrome --incognito 'https://shell.azure.com/'
 }
 
 function goto-azure-dev {
-  chrome 'https://dev.azure.com/'
+  chrome --incognito 'https://dev.azure.com/'
 }
 
 function goto-azure-dev-windowsPowershell {
-  chrome 'https://dev.azure.com/superusers-kursus/windowspowershell'
+  chrome --incognito 'https://dev.azure.com/superusers-kursus/windowspowershell'
 }
+
 
 
 goto-home

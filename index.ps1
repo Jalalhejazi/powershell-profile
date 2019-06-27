@@ -1,7 +1,7 @@
 ## loading script files from "$profileHOME"
 
 
-. "$ProfileHOME\home\index.ps1"
+. "$ProfileHOME\goto\index.ps1"
 . "$ProfileHOME\host\index.ps1"
 . "$ProfileHOME\git\index.ps1"
 . "$ProfileHOME\env\index.ps1"
