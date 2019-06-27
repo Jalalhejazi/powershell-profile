@@ -1,6 +1,6 @@
 
 function devops-project-list {
-    az devops project list
+    az devops project list $args
 }
 
 function devops-project-create {
