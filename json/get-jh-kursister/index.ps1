@@ -14,6 +14,10 @@ function get-jh-kursister {
     
     get-jh-kursister -kursusNummer ms0979 -dato 20190624
 
+    .EXAMPLE
+    
+    get-jh-kursister -kursusNummer SU0072 -dato 20190701 | ConvertTo-Json
+
 #>
 
     param(
