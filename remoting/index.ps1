@@ -1,3 +1,6 @@
+
+
+function windows-remote-connect {
 <#
 
     .EXAMPLE
@@ -9,8 +12,6 @@
 
 
 #>
-
-function windows-remote-connect {
     [CmdletBinding()]
     param(
         
@@ -31,3 +32,14 @@ function windows-remote-connect {
 
     Enter-PSSession -Session $login
 }
+
+
+
+function connect-to {
+    param(
+        $server
+    )
+    $port   = "3389" 
+    Start-Process "mstsc" -ArgumentList "/V:$server`:$port /fullscreen /admin " 
+}
+    
