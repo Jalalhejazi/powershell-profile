@@ -1,4 +1,4 @@
-function env-list { ls env:\ }
+
 
 function cls { clear-host }
 function c   { clear-host }
