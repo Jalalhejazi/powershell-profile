@@ -22,6 +22,12 @@ function profile-deploy {
     git-deploy 
 }
 
+function profile-deploy-all {
+    cd $ProfileHOME
+    env-get dev
+    git-deploy 
+}
+
 
 function profile-setup {
     cd ${Env:USERPROFILE}\Documents
