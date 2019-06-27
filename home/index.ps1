@@ -1,6 +1,6 @@
 
 function goto-kursus {
-  cd "$ProfileHOME/kursus"
+  cd "$ProfileHOME\kursus"
 }
 
 function goto-home {
@@ -8,19 +8,10 @@ function goto-home {
 }
 
 
-function goto-c {
-  cd "c:\"
-}
-
-
 function goto-dev {
-  cd "c:\dev"
+  cd "C:\Dev"
 }
 
-
-function goto-temp  {
-    cd "$env:temp"
-}
 
 
 goto-home
