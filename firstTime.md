@@ -6,6 +6,7 @@ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 scoop --version 
 
+scoop update
 scoop install 7zip 
 scoop install git 
 
