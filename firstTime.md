@@ -25,6 +25,6 @@ exit
 ## How to install tools
 
 ```powershell
-tools-install-development
+scoop-install-all
 ```
 

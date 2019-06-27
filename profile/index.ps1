@@ -7,7 +7,7 @@ function profile-ModulePath {
 }
 
 
-function profile-edit   { subl $profilehome }
+function profile-edit   { code $profilehome }
 function profile-reload { . $profile }
 
 function profile-update { 
@@ -17,9 +17,9 @@ function profile-update {
 }
 
 
-function profile-push {
+function profile-deploy {
     cd $ProfileHOME
-    npm run deploy 
+    git-deploy 
 }
 
 

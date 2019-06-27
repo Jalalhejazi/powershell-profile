@@ -1,20 +1,22 @@
 ## Using scoop.sh (the missing apt-get install for windows)
-function scoop-install-development {
+function scoop-install-all {
     scoop bucket add extras   
-    scoop install git 
     scoop install 7zip 
+    scoop install git 
     scoop install sudo 
     scoop install touch
-    scoop install vim 
-    scoop install gow 
     scoop install vscode 
     scoop install win32-openssh 
     scoop install azure-cli 
     scoop install pwsh
     scoop install chrome
+    scoop install concfg 
 
-    # scoop install concfg 
+    # scoop install gow 
+    # scoop install vim 
 }
+
+
 
 function scoop-update-all {
 <#
@@ -42,13 +44,13 @@ function scoop-homepage {
 }
 
 
-function scoop-app-info {
+function scoop-info {
     param($appName)
     scoop info $appName
 }
 
 
-function scoop-app-uninstall {
+function scoop-uninstall {
     param($appName)
     scoop uninstall $appName
 }
