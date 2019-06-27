@@ -1,7 +1,18 @@
-function env { ls env:\ }
+function env-list { ls env:\ }
 
 function cls { clear-host }
 function c   { clear-host }
+
+
+function goto-theming-powershell {
+    chrome 'https://github.com/lukesampson/scoop/wiki/Theming-Powershell'
+}
+
+function host-list-layout {
+    # scoop install concfg
+    # https://github.com/lukesampson/concfg
+    concfg  presets
+}
 
 function host-set-layout-mocha {
     # scoop install concfg
@@ -29,14 +40,6 @@ function host-set-layout {
     param($layoutName)
     concfg  import $layoutName --yes --non-interactive
 }
-
-
-
-function host-list-layout {
-    # scoop install concfg
-    concfg  presets
-}
-
 
 
 function ps6 {
