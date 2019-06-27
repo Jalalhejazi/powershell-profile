@@ -4,13 +4,10 @@ function cls { clear-host }
 function c   { clear-host }
 
 
-function goto-theming-powershell {
-    chrome 'https://github.com/lukesampson/scoop/wiki/Theming-Powershell'
-}
-
 function host-list-layout {
     # scoop install concfg
     # https://github.com/lukesampson/concfg
+    # https://github.com/lukesampson/scoop/wiki/Theming-Powershell
     concfg  presets
 }
 
