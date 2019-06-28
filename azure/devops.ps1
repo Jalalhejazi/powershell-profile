@@ -12,3 +12,15 @@ function devops-project-create {
 
     az devops project create --name $projectName --description $projectDescription --visibility $visibility  
 }
+
+function devops-repos-create {
+<#
+    Create a Git repository in a team project.
+#>
+    param(
+        $repoName,
+        $project
+    )
+
+    az repos create --name $repoName --project $project $args
+}
