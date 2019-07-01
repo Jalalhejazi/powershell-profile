@@ -6,6 +6,11 @@ function ng-generate-component {
    ng generate component $navn  --module=app.module.ts --export --no-spec --selector=$navn $args
 } 
 
+function ng-new-help {
+    ng new --help 
+}
+
+
 function ng-new-app {
 <#
 
@@ -14,11 +19,11 @@ function ng-new-app {
 ng-new-app demo -d
 
 .EXAMPLE
-ng-new-app demo -d
+ng-new-app demo 
 
 
 #>
-    param($AppName)
+    param($AppName = 'demo')
 
     goto-dev
     ng new $AppName --minimal --routing  --defaults $args 
