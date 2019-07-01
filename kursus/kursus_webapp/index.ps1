@@ -10,6 +10,15 @@ function ng-new-help {
     ng new --help 
 }
 
+function ng-build-help {
+    ng build --help 
+}
+
+
+function ng-add-help {
+    ng add --help 
+}
+
 
 function ng-new-app {
 <#
@@ -26,5 +35,6 @@ ng-new-app demo
     param($AppName = 'demo')
 
     goto-dev
-    ng new $AppName --minimal --routing  --defaults  --style less $args 
+    ng new $AppName  --routing  --defaults --style less  --skip-tests   $args 
+    
 }
