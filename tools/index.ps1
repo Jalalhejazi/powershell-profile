@@ -64,5 +64,6 @@ function please-make-my-life-easy {
 
 
 function web-development {
+    npm install -g npm
     npm install --global @angular/cli typescript 
 }
