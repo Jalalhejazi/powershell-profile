@@ -16,5 +16,6 @@ function new-azure-secret{
 }
 
 
-
-# $access_token=get-azure-secret -secretName devops
+function set-azure-devops-secret {
+    env-get dev | az devops login --organization https://dev.azure.com/superusers-kursus
+}
