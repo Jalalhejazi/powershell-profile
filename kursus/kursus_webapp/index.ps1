@@ -26,5 +26,5 @@ ng-new-app demo
     param($AppName = 'demo')
 
     goto-dev
-    ng new $AppName --minimal --routing  --defaults $args 
+    ng new $AppName --minimal --routing  --defaults  --style less $args 
 }
