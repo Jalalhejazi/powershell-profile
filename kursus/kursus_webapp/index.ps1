@@ -1,11 +1,8 @@
+function goto-azure-dev-angular {
+    chrome --incognito 'https://dev.azure.com/superusers-kursus/angular/'
+}
 
-function ng-generate-component {
-    param(
-        $navn 
-    )
-   ng generate component $navn  --module=app.module.ts --export --no-spec --selector=$navn $args
-} 
-
+  
 function ng-new-help {
     ng new --help 
 }
@@ -38,3 +35,12 @@ ng-new-app demo
     ng new $AppName  --routing  --defaults --style less  --skip-tests   $args 
     
 }
+
+
+
+function ng-generate-component {
+    param(
+        $navn 
+    )
+   ng generate component $navn  --module=app.module.ts --export --no-spec --selector=$navn $args
+} 

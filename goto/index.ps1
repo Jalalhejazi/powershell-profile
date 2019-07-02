@@ -45,6 +45,5 @@ function goto-azure-dev-windowsPowershell {
 }
 
 
-
 goto-home
 
