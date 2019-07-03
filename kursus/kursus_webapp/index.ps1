@@ -7,6 +7,11 @@ function goto-angular-homepage {
 }
 
 
+function goto-angular-example {
+    chrome --incognito 'https://www.angularexampleapp.com/'
+}
+
+
   
 function ng-new-help {
     ng new --help 
