@@ -47,6 +47,17 @@ ng-new-app demo
 }
 
 
+function ng-new-app-using-dotnet {
+    # scoop install dotnet
+    param(
+        $navn='dotnet-demo-app' 
+    )
+    mkdir $name
+    dotnet new angular 
+    dotnet restore 
+    dotnet build
+    dotnet run        
+}
 
 function ng-generate-component {
     param(
@@ -60,6 +71,14 @@ function ng-generate-class {
         $navn
     )
     ng generate class  --name  $navn $args
+}
+
+
+function ng-generate-service{
+    param(
+        $navn
+    )
+    ng generate service  --name  $navn $args
 }
 
 
