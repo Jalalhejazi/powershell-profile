@@ -49,3 +49,15 @@ function ng-generate-component {
     )
    ng generate component $navn  --module=app.module.ts --export --skip-tests --selector=$navn $args
 } 
+
+function ng-generate-class {
+    param(
+        $navn
+    )
+    ng generate class  --name  $navn $args
+}
+
+
+function ng-add-eksternal-grid {
+ ng add @progress/kendo-angular-grid
+}
