@@ -35,3 +35,23 @@ function get-jh-kursister {
     $data | select kursistID, person_Navn, firma_navn  
 
 }
+
+
+# 
+
+function get-jh-kurser {
+    param(
+        $dato = (Get-Date -Format "yyyyMM")
+    )
+    
+    $ErrorActionPreference = 'SilentlyContinue'
+
+    $remoteAddress = "http://service.superusers.dk/DataService/Kalender/jh?kursus_dato=$dato&format=json"
+    
+    $data = (Invoke-RestMethod -Uri $remoteAddress).KalenderList
+
+    # $data | SELECT kursus_nummer + ' ' + kursus_titel, kursus_lokale, kursus_dage,kursus_dato      
+
+    $data | select @{Name="Kursus"; E={$psitem.kursus_dato + ' ' + $psitem.kursus_lokale + ' '  + $psitem.kursus_nummer + ' ' + $psitem.kursus_titel}  }
+}
+
