@@ -55,6 +55,9 @@ function scoop-uninstall {
     scoop uninstall $appName
 }
 
+function install-semantic-version-tool {
+    dotnet tool install --tool-path . nbgv
+}
 
 function please-make-my-life-easy {
     ## ref.: https://github.com/sindresorhus/awesome-nodejs
