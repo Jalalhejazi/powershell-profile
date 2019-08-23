@@ -44,6 +44,17 @@ function goto-azure-dev-windowsPowershell {
   chrome --incognito 'https://dev.azure.com/superusers-kursus/windowspowershell'
 }
 
+function goto-google {
+  param($search)
+  chrome --incognito "https://www.google.com/search?newwindow=1&q=$search"
+}
+
+
+function goto-github-superusers {
+  chrome 'https://github.com/SuperUsersDK/'
+}
+
+
 
 goto-home
 

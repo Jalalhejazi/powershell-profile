@@ -6,6 +6,7 @@ function scoop-install-all {
     scoop install sudo 
     scoop install touch
     scoop install vscode 
+    scoop install dotnet-sdk
     scoop install win32-openssh 
     scoop install azure-cli 
     scoop install pwsh
@@ -56,7 +57,7 @@ function scoop-uninstall {
 }
 
 function install-semantic-version-tool {
-    dotnet tool install --tool-path . nbgv
+    dotnet tool install -g nbgv
 }
 
 function please-make-my-life-easy {
@@ -67,6 +68,8 @@ function please-make-my-life-easy {
 
 
 function web-development {
+    scoop install dotnet-sdk
+    scoop install nodejs
     npm install -g npm
     npm install --global @angular/cli typescript 
 }
