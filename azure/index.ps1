@@ -9,6 +9,8 @@ if ($env:USERNAME -eq $author) {
     
     Clear-Host
     Write-Host "Loading Azure $subscription subscription and $keyvault secrets for user $author "
+
+    # https://www.azuredevopslabs.com/labs/vstsextend/azurekeyvault/
 }
 
 . "$ProfileHOME\azure\secrets.ps1"
