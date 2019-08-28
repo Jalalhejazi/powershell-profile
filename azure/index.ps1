@@ -1,11 +1,12 @@
 <#
     Setup your env:
 
-    env-set azure-init         ''
-    env-set azure-subscription ''
-    env-set azure-keyvault     '' 
+    env-set azure-init           ''
+    env-set azure-subscription   ''
+    env-set azure-keyvault       '' 
+    env-set AZURE_DEVOPS_EXT_PAT ''
 
-    env-list azure-*
+    env-list azure*
 #>
 
 

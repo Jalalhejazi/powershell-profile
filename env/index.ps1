@@ -16,5 +16,5 @@ function env-get {
 }
 
 function env-Get-DevOps-PAT {
-    env-get devops
+    env-get AZURE_DEVOPS_EXT_PAT
 }
