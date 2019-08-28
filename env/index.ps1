@@ -14,3 +14,7 @@ function env-get {
     # $env:$Name 
     [Environment]::GetEnvironmentVariable($Name, 'User')
 }
+
+function env-Get-DevOps-PAT {
+    env-get devops
+}
