@@ -1,15 +1,26 @@
+<#
+    Setup your env:
 
-$author = 'jalal'
+    env-set azure-init         ''
+    env-set azure-subscription ''
+    env-set azure-keyvault     '' 
 
-if ($env:USERNAME -eq $author) {
+    env-list azure-*
+#>
+
+
+$cloud = env-get azure-init
+
+if ($cloud) {
       
     $subscription=env-get azure-subscription
     $keyvault=env-get azure-keyvault
     
+    # az login --help
     az account set -s $subscription
     
     Clear-Host
-    Write-Host "Loading Azure $subscription subscription and $keyvault secrets for user $author "
+    Write-Host "Loading Azure $subscription subscription and $keyvault secrets"
 }
 
 . "$ProfileHOME\azure\secrets.ps1"
