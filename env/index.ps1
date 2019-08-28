@@ -1,5 +1,5 @@
 
-function env-list { ls env:\ }
+function env-list { ls env:\$args }
 
 function env-set {
     param($Name, $Value)

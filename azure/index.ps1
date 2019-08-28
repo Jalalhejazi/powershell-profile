@@ -3,14 +3,13 @@ $author = 'jalal'
 
 if ($env:USERNAME -eq $author) {
       
-    $subscription="MSDN_950_kr"
-    $keyvault="superusers2020"
+    $subscription=env-get azure-subscription
+    $keyvault=env-get azure-keyvault
+    
     az account set -s $subscription
     
     Clear-Host
     Write-Host "Loading Azure $subscription subscription and $keyvault secrets for user $author "
-
-    # https://www.azuredevopslabs.com/labs/vstsextend/azurekeyvault/
 }
 
 . "$ProfileHOME\azure\secrets.ps1"
