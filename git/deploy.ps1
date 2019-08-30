@@ -1,3 +1,7 @@
-function deploy         { npm run deploy    }
-function git-deploy     { git add . | git commit -m '.' | git push }
-function gs             { git status        }
+function deploy  { npm run deploy    }
+function deploy-feature  { npm run deploy-feature  }
+function deploy-broken  { npm run deploy-feature  }
+function deploy-status  { npm run deploy-status  }
+
+function gs    { git status        }
+
