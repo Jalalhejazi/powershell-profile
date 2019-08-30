@@ -1,1 +1,1 @@
-. "$ProfileHOME\git\deploy.ps1"
+. "$ProfileHOME\git\git-deploy.ps1"
