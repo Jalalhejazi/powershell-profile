@@ -56,5 +56,5 @@ function goto-github-superusers {
 
 
 
-goto-home
+goto-dev
 
