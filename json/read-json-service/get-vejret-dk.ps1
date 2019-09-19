@@ -20,7 +20,7 @@ function get-vejret-dk {
         [string]$byNavn = "copenhagen"
     )
 
-    $remoteAddress = "http://vejr.eu/api.php?location=$byNavn&degree=C"
+    $remoteAddress = "https://vejr.eu/api.php?location=$byNavn&degree=C"
     $data    = Invoke-RestMethod -Uri $remoteAddress
 
     write-output $data
