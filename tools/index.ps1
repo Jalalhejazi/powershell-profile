@@ -10,7 +10,7 @@ function scoop-install-all {
     scoop install win32-openssh 
     scoop install azure-cli 
     scoop install pwsh
-    scoop install chrome
+  #  scoop install chrome
     scoop install concfg 
 
     # scoop install gow 
