@@ -1,5 +1,8 @@
 ## Clean windows OS
 
+
+- [See a video on youtube Why Using Scoop on Windows ?](https://www.youtube.com/watch?v=Pj1PaZMzMz0)
+
 ```powershell
 
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
