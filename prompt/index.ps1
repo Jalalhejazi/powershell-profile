@@ -17,7 +17,10 @@ function prompt
 
 function info {
 
-    Write-Host "to start PowerShell in ADMIN mode:  sudo powershell  " -ForegroundColor Green
+    Write-Host "start PowerShell in ADMIN mode:  sudo powershell  " -ForegroundColor Green
+    Write-Host "check if you are online:  is-online  " -ForegroundColor Green
+    Write-Host "list installed cli tools:  scoop list  " -ForegroundColor Green
+    Write-Host "get profile url:  profile-repo  " -ForegroundColor Green
+    Write-Host "to edit this profile:  profile-edit  " -ForegroundColor Green
 
-    Write-Host "To check if you are online:  is-online  " -ForegroundColor Green
 }

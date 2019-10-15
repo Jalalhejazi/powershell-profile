@@ -6,7 +6,9 @@ function profile-ModulePath {
     (cat Env:\PSModulePath) -split ";"
 }
 
-
+function profile-repo {
+    (get-content-from-json  "$ProfileHOME/package.json").repository.url
+}
 function profile-edit   { code $profilehome }
 function profile-reload { . $profile }
 
@@ -32,7 +34,8 @@ function profile-deploy-all {
 function profile-setup {
     cd ${Env:USERPROFILE}\Documents
     rimraf ./windowspowershell
-    git clone https://superusers-kursus@dev.azure.com/superusers-kursus/windowspowershell/_git/windowspowershell
+    $url = profile-repo
+    git clone $url
     exit
 }
 
