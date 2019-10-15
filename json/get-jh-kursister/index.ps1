@@ -30,9 +30,9 @@ function get-jh-kursister {
     # private service kun indenfor Karlebogaard bygning
     $remoteAddress = "http://eval.superusers.dk/api/v1/kursister/$kursusNummer/158/$dato"
     
-    $data = (Invoke-RestMethod -Uri $remoteAddress).data
+    $data = (HTTP GET $remoteAddress| ConvertFrom-Json).data
 
-    $data | select kursistID, person_Navn, firma_navn  
+    $data | Select-Object kursistID, person_Navn, firma_navn  
 
 }
 
@@ -48,10 +48,10 @@ function get-jh-kurser {
 
     $remoteAddress = "http://service.superusers.dk/DataService/Kalender/jh?kursus_dato=$dato&format=json"
     
-    $data = (Invoke-RestMethod -Uri $remoteAddress).KalenderList
+    $data = (HTTP GET $remoteAddress | ConvertFrom-Json).KalenderList
 
     # $data | SELECT kursus_nummer + ' ' + kursus_titel, kursus_lokale, kursus_dage,kursus_dato      
 
-    $data | select @{Name="Kursus"; E={$psitem.kursus_dato + ' ' + $psitem.kursus_lokale + ' '  + $psitem.kursus_nummer + ' ' + $psitem.kursus_titel}  }
+    $data | Select-Object @{Name="Kursus"; E={$psitem.kursus_dato + ' ' + $psitem.kursus_lokale + ' '  + $psitem.kursus_nummer + ' ' + $psitem.kursus_titel}  }
 }
 

@@ -1,6 +1,5 @@
 function prompt
 {
-    
     $time = "{0,2:hh}:{0,2:mm}" -f (Get-Date)
    
     $currentPrincipal = New-Object Security.Principal.WindowsPrincipal( [Security.Principal.WindowsIdentity]::GetCurrent() )
@@ -11,11 +10,14 @@ function prompt
         $leftCharCount += 1
     }
 
-    # $temperatur = get-temperatur-dk 
-    # $IP = get-private-IP-address
-    # $host.UI.RawUI.WindowTitle = "$pwd    -    $temperatur    -    time ($time)";
+    $host.UI.RawUI.WindowTitle = "$pwd  -  time ($time)";
    
-    $host.UI.RawUI.WindowTitle  = "$time"
-    return "$IP $ "
+    return "$ "
 }
 
+function info {
+
+    Write-Host "to start PowerShell in ADMIN mode:  sudo powershell  " -ForegroundColor Green
+
+    Write-Host "To check if you are online:  is-online  " -ForegroundColor Green
+}
