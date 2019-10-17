@@ -2,11 +2,9 @@
 
 Using $profile for any Windows environments 
 
-* Windows console shell (PowerShell.exe)
-* Windows ISE shell (PowerShell_ISE.exe)
-* Azure Cloud-shell (Azure automation)
-* Azure Windows VMs (Azure VMS)
-* Windows Core/Nano Servers (Container)
+
+## [How to setup windows first time](firstTime.md)
+
 
 
 ## git clone repo
@@ -40,8 +38,6 @@ profile-update
 
 
 
-## How to setup windows first time
 
-[link](firstTime.md)
 
 
