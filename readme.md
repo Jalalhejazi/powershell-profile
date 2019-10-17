@@ -11,10 +11,11 @@ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 scoop --version 
 
-scoop update
+scoop bucket add extras
 scoop install 7zip 
 scoop install git 
-scoop install vscode
+scoop install sudo 
+
 ```
 
 ## profile-setup
@@ -28,6 +29,12 @@ git clone https://superusers-kursus@dev.azure.com/superusers-kursus/windowspower
 exit
 
 # start powershell.exe 
+scoop-install-all
+
+install-web-tools
+
+please-make-my-life-easy
+
 profile-info
 
 ```
