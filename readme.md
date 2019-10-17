@@ -38,3 +38,16 @@ please-make-my-life-easy
 profile-info
 
 ```
+
+
+## profile-update
+
+```
+goto-home
+
+git pull
+```
+
+
+
+
