@@ -64,8 +64,8 @@ function install-web-tools {
     pip install httpie
     scoop install dotnet-sdk
     scoop install nodejs
-    npm install --global npm
-    npm install --global @angular/cli nestjs typescript 
+    npm install npm --global
+    npm install @angular/cli nestjs typescript --global
 }
 
 
