@@ -15,17 +15,3 @@ function prompt
     return "$ "
 }
 
-function info {
-
-$TryTheseCommands = @"
-
-    sudo powershell = start powershell as admin 
-
-    install-web-tools = install web development tools
-
-    scoop list = show a list of installed scoop apps
-
-"@
-
-ConvertFrom-StringData $TryTheseCommands
-}

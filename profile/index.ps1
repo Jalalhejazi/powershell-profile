@@ -40,6 +40,16 @@ function profile-setup {
 }
 
 
+function profile-info {
+$TryTheseCommands = @"
+    sudo powershell     = (start powershell as admin)
+    scoop list          = (show a list of installed scoop apps)
+    install-web-tools   = (install web development tools)
+    profile-edit        = (open profile with vscode for edit)
+    profile-update      = (get latest version from repo)
+"@
 
+    ConvertFrom-StringData $TryTheseCommands 
+}
 
 
