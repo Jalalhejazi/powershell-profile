@@ -28,5 +28,6 @@ if ($cloud) {
 . "$ProfileHOME\azure\vm-connect.ps1"
 . "$ProfileHOME\azure\redis.ps1"
 . "$ProfileHOME\azure\devops.ps1"
+. "$ProfileHOME\azure\send-data-to-azure.ps1"
 
 

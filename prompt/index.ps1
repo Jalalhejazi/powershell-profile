@@ -17,10 +17,15 @@ function prompt
 
 function info {
 
-    Write-Host "start PowerShell in ADMIN mode:     sudo powershell  " -ForegroundColor Green
-    Write-Host "install web tools:      install-web-tools  " -ForegroundColor Green
-    Write-Host "list installed cli tools:       scoop list  " -ForegroundColor Green
-    Write-Host "get profile url:        profile-repo  " -ForegroundColor Green
-    Write-Host "to edit this profile:       profile-edit  " -ForegroundColor Green
+$TryTheseCommands = @"
 
+    sudo powershell = start powershell as admin 
+
+    install-web-tools = install web development tools
+
+    scoop list = show a list of installed scoop apps
+
+"@
+
+ConvertFrom-StringData $TryTheseCommands
 }
