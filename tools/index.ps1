@@ -72,7 +72,7 @@ function install-web-tools {
 function please-make-my-life-easy {
     ## ref.: https://github.com/sindresorhus/awesome-nodejs
      
-    npm install --global fkill-cli kill-tabs rimraf empty-trash-cli pen speed-test live-server http-server is-online-cli is-up-cli clipboard-cli 
+    npm install fkill-cli kill-tabs rimraf empty-trash-cli pen speed-test live-server http-server is-online-cli is-up-cli clipboard-cli --global
 }
 
 
