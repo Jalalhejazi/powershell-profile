@@ -60,16 +60,20 @@ function install-semantic-version-tool {
     dotnet tool install -g nbgv
 }
 
+function install-web-tools {
+    scoop install dotnet-sdk
+    scoop install nodejs
+    npm install --global npm
+    npm install --global @angular/cli nestjs typescript 
+}
+
+
 function please-make-my-life-easy {
     ## ref.: https://github.com/sindresorhus/awesome-nodejs
      
-    npm --global install fkill-cli kill-tabs rimraf empty-trash-cli pen speed-test live-server http-server is-online-cli is-up-cli clipboard-cli 
+    npm install --global fkill-cli kill-tabs rimraf empty-trash-cli pen speed-test live-server http-server is-online-cli is-up-cli clipboard-cli 
 }
 
 
-function web-development {
-    scoop install dotnet-sdk
-    scoop install nodejs
-    npm install -g npm
-    npm install --global @angular/cli nestjs typescript 
-}
+
+
