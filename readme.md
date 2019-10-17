@@ -14,6 +14,7 @@ scoop --version
 scoop update
 scoop install 7zip 
 scoop install git 
+scoop install vscode
 ```
 
 ## profile-setup
