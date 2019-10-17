@@ -28,6 +28,6 @@ git clone https://superusers-kursus@dev.azure.com/superusers-kursus/windowspower
 exit
 
 # start powershell.exe 
-info
+profile-info
 
 ```
