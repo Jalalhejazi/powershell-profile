@@ -61,6 +61,7 @@ function install-semantic-version-tool {
 }
 
 function install-web-tools {
+    pip install httpie
     scoop install dotnet-sdk
     scoop install nodejs
     npm install --global npm
