@@ -71,5 +71,5 @@ function web-development {
     scoop install dotnet-sdk
     scoop install nodejs
     npm install -g npm
-    npm install --global @angular/cli typescript 
+    npm install --global @angular/cli nestjs typescript 
 }
