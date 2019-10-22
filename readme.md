@@ -11,7 +11,6 @@ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 scoop --version 
 
-
 scoop install 7zip 
 scoop install git 
 scoop install sudo 
