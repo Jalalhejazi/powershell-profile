@@ -11,11 +11,12 @@ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 scoop --version 
 
-scoop bucket add extras
+
 scoop install 7zip 
 scoop install git 
 scoop install sudo 
 
+scoop bucket add extras
 ```
 
 ## profile-setup
