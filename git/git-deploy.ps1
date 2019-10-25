@@ -6,7 +6,7 @@ function deploy-status  { npm run deploy-status  }
 function gs       { git status }
 
 function git-config-alias {
-    git config --global alias.g git
+    git config --global -e
     git config --global alias.s status
     git config --global alias.d diff
     git config --global alias.co checkout
