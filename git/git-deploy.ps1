@@ -3,5 +3,6 @@ function deploy-feature  { npm run deploy-feature  }
 function deploy-broken  { npm run deploy-broken  }
 function deploy-status  { npm run deploy-status  }
 
-function gs    { git status        }
+function gs       { git status        }
+function git-log  { git log --graph --oneline --decorate}
 
