@@ -15,6 +15,9 @@ function new-azure-secret{
     az keyvault secret set --vault-name $keyvault   --name $secretName --value $secretValue
 }
 
+function list-azure-secret {
+    az keyvault secret list  --vault-name $keyvault --query "[].id"
+}
 
 function set-azure-devops-secret {
     env-get dev | az devops login --organization https://dev.azure.com/superusers-kursus
