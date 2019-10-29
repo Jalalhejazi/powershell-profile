@@ -14,5 +14,5 @@ function git-config-alias {
     git config --global alias.last "log -1 HEAD"
     git config --global alias.cmt "commit --amend --no-edit"
     git config --global alias.pr "pull --rebase"
-    git config --global alias.log "log --graph --oneline --decorate -n 30"
+    git config --global alias.h "log --graph --oneline --decorate -n 30"
 }
