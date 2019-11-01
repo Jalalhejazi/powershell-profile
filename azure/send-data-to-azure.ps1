@@ -7,9 +7,8 @@ function send-data-to-azure {
     $z = "zzz" 
     )
 
-    # $url    = "https://superusers-kursus.westeurope-1.eventgrid.azure.net/api/events"
-    # $url    = get-azure-secret event-grid-url
-    # $secret = get-azure-secret event-grid-key
+    $url    = "https://superusers-kursus.westeurope-1.eventgrid.azure.net/api/events"
+    $secret = "QX86h88yAz82nXJ16gTazHHtSJVjN/E9OROCJSGg4Ls="
 
     # [Environment]::SetEnvironmentVariable("event-grid-url", $url  , 'User')
     # [Environment]::SetEnvironmentVariable("event-grid-key", $secret, 'User')
