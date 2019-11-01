@@ -7,12 +7,13 @@ function send-data-to-azure {
     $z = "zzz" 
     )
 
-    $url    = "https://superusers-kursus.westeurope-1.eventgrid.azure.net/api/events"
-    $secret = "QX86h88yAz82nXJ16gTazHHtSJVjN/E9OROCJSGg4Ls="
+<#
+    $url    = ""
+    $secret = ""
 
     [Environment]::SetEnvironmentVariable("event-grid-url", $url  , 'User')
     [Environment]::SetEnvironmentVariable("event-grid-key", $secret, 'User')
-
+#>
 
     $WebHookAddress = [Environment]::GetEnvironmentVariable("event-grid-url", 'User')
     $key =            [Environment]::GetEnvironmentVariable("event-grid-key", 'User')
