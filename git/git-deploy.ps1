@@ -6,7 +6,7 @@ function deploy-status  { npm run deploy-status  }
 function gs       { git status }
 
 function git-config-alias {
-    # git config --global -e
+    # git config --global --edit
 
     git config --global user.email "dev@devops.org"
     git config --global user.name "dev"
