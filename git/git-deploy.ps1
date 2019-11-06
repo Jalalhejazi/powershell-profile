@@ -7,6 +7,8 @@ function gs       { git status }
 
 function git-config-alias {
     git config --global -e
+    git config --global user.email "dev@devops.org"
+    git config --global user.name "dev"
     git config --global alias.s status
     git config --global alias.d diff
     git config --global alias.co checkout
