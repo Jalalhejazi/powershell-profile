@@ -15,6 +15,8 @@ function git-set-alias {
     git config --global alias.cmt "commit --amend --no-edit"
     git config --global alias.pr "pull --rebase"
     git config --global alias.h "log --graph --oneline --decorate -n 30"
+    git config --global alias.undo '!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f'
+
 }
 
 function git-set-name {
