@@ -5,14 +5,8 @@ function deploy-status  { npm run deploy-status  }
 
 function gs       { git status }
 
-function git-config-alias {
-    param(
-        $name = "dev",
-        $email = "dev@devops.org"
-    )
+function git-set-alias {
     # git config --global --edit
-    git config --global user.email $email
-    git config --global user.name $name
     git config --global alias.s status
     git config --global alias.d diff
     git config --global alias.co checkout
@@ -21,4 +15,13 @@ function git-config-alias {
     git config --global alias.cmt "commit --amend --no-edit"
     git config --global alias.pr "pull --rebase"
     git config --global alias.h "log --graph --oneline --decorate -n 30"
+}
+
+function git-set-name {
+    param(
+        $name = "dev",
+        $email = "dev@devops.org"
+    )
+    git config --global user.email $email
+    git config --global user.name $name
 }
