@@ -16,7 +16,7 @@ function git-set-alias {
     git config --global alias.pr "pull --rebase"
     git config --global alias.h "log --graph --oneline --decorate -n 30"
     git config --global alias.undo '!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f'
-
+    git config --global alias.spush 'push --recurse-submodules=on-demand'
 }
 
 function git-set-name {
@@ -26,4 +26,9 @@ function git-set-name {
     )
     git config --global user.email $email
     git config --global user.name $name
+}
+
+
+function git-clone {
+    git clone --recurse-submodules $args
 }
