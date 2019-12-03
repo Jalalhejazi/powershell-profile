@@ -17,6 +17,9 @@ function git-set-alias {
     git config --global alias.h "log --graph --oneline --decorate -n 30"
     git config --global alias.undo '!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f'
     git config --global alias.spush 'push --recurse-submodules=on-demand'
+    
+    git config --global color.ui "auto"
+    git config --global core.editor "code --wait"
 }
 
 function git-set-name {
