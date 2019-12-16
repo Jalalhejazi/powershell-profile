@@ -30,18 +30,16 @@ function goto-superusers-kursus {
 function goto-azure-portal {
   chrome --incognito 'https://portal.azure.com/'
 }
-
-
 function goto-azure-shell {
   chrome --incognito 'https://shell.azure.com/'
 }
 
-function goto-azure-dev {
-  chrome --incognito 'https://dev.azure.com/'
+function goto-az203 {
+  chrome 'https://dev.azure.com/superusers-kursus/az203'
 }
 
 function goto-azure-dev-windowsPowershell {
-  chrome --incognito 'https://dev.azure.com/superusers-kursus/windowspowershell'
+  chrome 'https://dev.azure.com/superusers-kursus/windowspowershell'
 }
 
 function goto-google {
