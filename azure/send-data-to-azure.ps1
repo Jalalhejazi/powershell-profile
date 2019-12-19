@@ -1,3 +1,8 @@
+
+function goto-eventGrid {
+    chrome https://superusers-kursus-demo-event-grid-2019.azurewebsites.net/
+}
+
 function send-data-to-azure {
     param(
     $message = "besked",
@@ -7,17 +12,8 @@ function send-data-to-azure {
     $z = "zzz" 
     )
 
-<#
-    $url    = ""
-    $secret = ""
-
-    [Environment]::SetEnvironmentVariable("event-grid-url", $url  , 'User')
-    [Environment]::SetEnvironmentVariable("event-grid-key", $secret, 'User')
-#>
-
-    $WebHookAddress = [Environment]::GetEnvironmentVariable("event-grid-url", 'User')
-    $key =            [Environment]::GetEnvironmentVariable("event-grid-key", 'User')
-
+    $WebHookAddress =  "https://superusers-kursus.westeurope-1.eventgrid.azure.net/api/events"
+    $key            =  env-get "event-grid-key"
 
     # Build The Message to be sent to Event Grid
     $eventID = Get-Random 99999
@@ -39,10 +35,4 @@ function send-data-to-azure {
     $body = "["+(ConvertTo-Json $htbody)+"]"
 
     Invoke-WebRequest -Uri $WebHookAddress -Method POST -Body $body -Headers @{"aeg-sas-key" = $key}
-
-
-    # USE HTTP POST with a valid key and Body as JSON
-    # http post $WebHookAddress --headers "aeg-sas-key:$key" $body
-
-
 }
