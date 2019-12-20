@@ -30,6 +30,3 @@ if ($cloud) {
 . "$ProfileHOME\azure\devops.ps1"
 . "$ProfileHOME\azure\send-data-to-azure.ps1"
 
-
-
-env-set -Name "event-grid-key"  -Value "mCCmAi5rdcx+NULQEbeXhSZWrsF7QdGPtpIwlAYW63E="
