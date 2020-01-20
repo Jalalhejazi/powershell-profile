@@ -6,6 +6,7 @@ function scoop-install-all {
     scoop install sudo 
     scoop install touch
     scoop install vscode 
+    scoop install python
     scoop install dotnet-sdk
     scoop install win32-openssh 
     scoop install azure-cli 
