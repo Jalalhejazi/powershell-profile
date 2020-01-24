@@ -3,9 +3,12 @@ function scoop-install-all {
     scoop bucket add extras   
     scoop install 7zip 
     scoop install git 
+    scoop install gitignore 
     scoop install sudo 
     scoop install touch
     scoop install vscode 
+    scoop install node
+    scoop install yarn
     scoop install python
     scoop install dotnet-sdk
     scoop install win32-openssh 
