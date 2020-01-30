@@ -1,24 +1,30 @@
 ## Using scoop.sh (the missing apt-get install for windows)
-function scoop-install-all {
-    scoop bucket add extras   
-    scoop install 7zip 
-    scoop install git 
-    scoop install gitignore 
-    scoop install sudo 
-    scoop install touch
-    scoop install vscode 
-    scoop install node
-    scoop install yarn
+function scoop-install-web {
+    scoop install azure-cli 
     scoop install python
     scoop install dotnet-sdk
-    scoop install win32-openssh 
-    scoop install azure-cli 
-    scoop install pwsh
+    scoop install nodejs
+    scoop install vscode
+    scoop install devdocs
     scoop install googlechrome
-    scoop install concfg 
+    scoop install git 
+    scoop install gitignore 
 
-    # scoop install gow 
-    # scoop install vim 
+    pip install httpie
+    
+    npm install npm --global
+    npm install @angular/cli @nestjs/cli typescript --global
+}
+function scoop-install-utils {
+    scoop bucket add extras   
+    scoop install 7zip 
+    scoop install sudo 
+    scoop install touch
+    scoop install win32-openssh 
+    scoop install pwsh
+    scoop install concfg 
+    scoop install gow 
+    scoop install vim 
 }
 
 
@@ -62,20 +68,6 @@ function scoop-uninstall {
 
 function install-semantic-version-tool {
     dotnet tool install -g nbgv
-}
-
-function install-web-tools {
-    
-    scoop install python
-    scoop install dotnet-sdk
-    scoop install nodejs
-    scoop install vscode
-    scoop install devdocs
-
-    pip install httpie
-    
-    npm install npm --global
-    npm install @angular/cli @nestjs/cli typescript --global
 }
 
 
