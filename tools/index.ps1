@@ -65,10 +65,14 @@ function install-semantic-version-tool {
 }
 
 function install-web-tools {
-    pip install httpie
+    
+    scoop install python
     scoop install dotnet-sdk
     scoop install nodejs
     scoop install devdocs
+
+    pip install httpie
+    
     npm install npm --global
     npm install @angular/cli @nestjs/cli typescript --global
 }
