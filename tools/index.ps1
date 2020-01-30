@@ -69,6 +69,7 @@ function install-web-tools {
     scoop install python
     scoop install dotnet-sdk
     scoop install nodejs
+    scoop install vscode
     scoop install devdocs
 
     pip install httpie
