@@ -29,14 +29,8 @@ git clone https://superusers-kursus@dev.azure.com/superusers-kursus/windowspower
 exit
 
 # start powershell.exe 
-scoop-install-all
-
-install-web-tools
-
-please-make-my-life-easy
-
 profile-info
-
+scoop-install-web
 ```
 
 
