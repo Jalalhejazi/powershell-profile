@@ -81,6 +81,14 @@ function ng-generate-service{
     ng generate service  --name  $navn $args
 }
 
+function ng-generate-module{
+    param(
+        $moduleName,
+        $routingPath   
+    )
+   ng generate module $moduleName --module=app.module --route=$routingPath  --routingScope=Child $args
+}
+
 
 function ng-add-eksternal-grid {
  ng add @progress/kendo-angular-grid
