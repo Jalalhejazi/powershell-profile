@@ -1,6 +1,6 @@
 
 function goto-eventGrid {
-    chrome https://superusers-kursus-demo-event-grid-2019.azurewebsites.net/
+    chrome https://superusers-kursus-demo-event-grid-2020.azurewebsites.net/
 }
 
 function send-data-to-azure {
