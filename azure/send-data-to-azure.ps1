@@ -12,6 +12,9 @@ function send-data-to-azure {
     $z = "zzz" 
     )
 
+    # env-set -Name event-grid-key $(get-azure-secret event-grid-key)
+    # env-set -Name event-grid-url $(get-azure-secret event-grid-url)
+
     $WebHookAddress =  "https://superusers-kursus.westeurope-1.eventgrid.azure.net/api/events"
     $key            =  env-get "event-grid-key"
 
