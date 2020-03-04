@@ -1,5 +1,7 @@
 ## $PROFILE for WindowsPowerShell
 
+- https://github.com/PowerShell/PowerShell/releases
+
 Before powershell.exe runs, the file named $profile must exist to configure your environments
 
 The OpenSource community is using scoop as CLI with PowerShell to automate the installation process like linux
