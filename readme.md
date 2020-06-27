@@ -1,4 +1,4 @@
-## $PROFILE for PowerShell version 7 (cross-platform)
+## PowerShell version 7 (cross-platform) Configuration
 
 
 - Must install PowerShell 7 first
