@@ -30,7 +30,7 @@ scoop install googlechrome
 ```powershell
 cd ${Env:USERPROFILE}\Documents
 
-# if PowerShell directory exists deleted, then clone from repo
+# Delete the PowerShell Folder before clone a new repo
 
 rm -R PowerShell
 
