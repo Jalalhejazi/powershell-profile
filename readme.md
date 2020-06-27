@@ -34,7 +34,7 @@ cd ${Env:USERPROFILE}\Documents
 
 rm -R PowerShell
 
-git clone https://superusers-kursus@dev.azure.com/superusers-kursus/windowspowershell/_git/windowspowershell PowerShell
+git clone https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell
 
 # must restart to read $profile configuration
 exit
