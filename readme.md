@@ -1,11 +1,7 @@
-## $PROFILE for PowerShell version 7
+## $PROFILE for PowerShell version 7 (cross-platform)
 
 
-Before powershell.exe runs, the file named $profile must exist to configure your environments
-
-The OpenSource community is using scoop as CLI with PowerShell to automate the installation process like linux
-
-- [See a video on youtube Why Using Scoop on Windows ?](https://www.youtube.com/watch?v=Pj1PaZMzMz0)
+- Must install PowerShell 7 first
 
 ```powershell
 # install latest PowerShell 7 (cross-platform)
