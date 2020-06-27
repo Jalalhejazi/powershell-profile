@@ -2,7 +2,7 @@
 # PowerShell Profile
 ############################################################
 
-$ProfileHOME    =  "${Env:USERPROFILE}\Documents\WindowsPowerShell"
+$ProfileHOME    =  "${Env:USERPROFILE}\Documents\PowerShell"
 
 . "$ProfileHOME\index.ps1"
 
