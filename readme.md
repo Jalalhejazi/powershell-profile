@@ -1,6 +1,5 @@
 ## $PROFILE for WindowsPowerShell
 
-- https://github.com/PowerShell/PowerShell/releases
 
 Before powershell.exe runs, the file named $profile must exist to configure your environments
 
@@ -8,7 +7,11 @@ The OpenSource community is using scoop as CLI with PowerShell to automate the i
 
 - [See a video on youtube Why Using Scoop on Windows ?](https://www.youtube.com/watch?v=Pj1PaZMzMz0)
 
-```
+```powershell
+# install latest PowerShell
+iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
+
+# install scoop for windows package manager
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 scoop --version 
@@ -17,7 +20,9 @@ scoop install 7zip
 scoop install git 
 scoop install sudo 
 
+# must add extras for GUI tools like vscode and Google chrome 
 scoop bucket add extras
+scoop install googlechrome
 ```
 
 ## profile-setup
