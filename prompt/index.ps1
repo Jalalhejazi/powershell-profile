@@ -10,7 +10,7 @@ function prompt
         $leftCharCount += 1
     }
 
-    $host.UI.RawUI.WindowTitle = "$pwd  -  time ($time)";
+    $host.UI.RawUI.WindowTitle = "$pwd  -  time ($time)  - $subscription";
    
     return "$ "
 }
