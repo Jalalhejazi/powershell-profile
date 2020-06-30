@@ -18,7 +18,7 @@ scoop install sudo
 
 # must add extras for GUI tools like vscode and Google chrome 
 scoop bucket add extras
-scoop install googlechrome
+scoop install googlechrome vscode
 ```
 
 ## profile-setup
