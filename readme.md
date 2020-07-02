@@ -36,9 +36,9 @@ git clone https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_
 # must restart to read $profile configuration
 exit
 
-env-set azure-init           '1'
-env-set azure-subscription   'din egen azure subscription her'
-env-set azure-keyvault       'din egen azure keyvault angives her' 
+env-set azure-init           'Deveolpment | Test | Prod'
+env-set azure-subscription   'subscription for dev, test, prod'
+env-set azure-keyvault       'azure keyvault to manage secrets and keys' 
 
 
 # start new powershell console 
