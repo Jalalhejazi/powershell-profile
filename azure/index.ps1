@@ -1,7 +1,7 @@
 <#
     Setup your env:
 
-    env-set azure-init           ''
+    env-set azure-env            ''
     env-set azure-subscription   ''
     env-set azure-keyvault       '' 
     env-set AZURE_DEVOPS_EXT_PAT ''
@@ -10,7 +10,7 @@
 #>
 
 
-$cloud = env-get azure-init
+$cloud = env-get azure-env
 
 if ($cloud) {
       
