@@ -34,8 +34,8 @@ function goto-azure-shell {
   chrome --incognito 'https://shell.azure.com/'
 }
 
-function goto-azure-dev-windowsPowershell {
-  chrome 'https://dev.azure.com/superusers-kursus/windowspowershell'
+function goto-powershell-profile {
+  chrome 'https://dev.azure.com/superusers-kursus/PowerShell'
 }
 
 function goto-google {
