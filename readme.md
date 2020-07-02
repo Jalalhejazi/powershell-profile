@@ -28,7 +28,6 @@ Setup environment, Azure Subscription, Keyvault, docker, git, etc.
 cd ${Env:USERPROFILE}\Documents
 
 # Delete the PowerShell Folder before clone a new repo
-
 rm -R PowerShell
 
 git clone https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell
@@ -36,12 +35,13 @@ git clone https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_
 # must restart to read $profile configuration
 exit
 
+# setup environment, then subscription and secret and key management
 env-set azure-env            'Deveolpment | Test | Prod'
 env-set azure-subscription   'subscription for dev, test, prod'
 env-set azure-keyvault       'azure keyvault to manage secrets and keys' 
 
 
-# start new powershell console 
+# start using profile- and tap for auto-complete
 profile-info
 profile-update
 profile-edit
