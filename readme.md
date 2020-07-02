@@ -21,7 +21,8 @@ scoop bucket add extras
 scoop install googlechrome vscode
 ```
 
-## profile-setup
+
+Setup environment, Azure Subscription, Keyvault, docker, git, etc. 
 
 ```powershell
 cd ${Env:USERPROFILE}\Documents
@@ -40,19 +41,9 @@ env-set azure-subscription   'din egen azure subscription her'
 env-set azure-keyvault       'din egen azure keyvault angives her' 
 
 
-# start powershell.exe 
+# start new powershell console 
 profile-info
-```
-
-
-## profile-update
+profile-update
+profile-edit
 
 ```
-goto-home
-
-git pull
-```
-
-
-
-
