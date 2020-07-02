@@ -52,7 +52,7 @@ function ng-new-app-using-dotnet {
     param(
         $navn='dotnet-demo-app' 
     )
-    mkdir $name
+    mkdir $navn
     dotnet new angular 
     dotnet restore 
     dotnet build
