@@ -26,7 +26,6 @@ Setup environment, Azure Subscription, Keyvault, docker, git, etc.
 
 ```powershell
 function profile-setup {
-   $ErrorActionPreference = 'SilentlyContinue'
    $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
 
    $isCloudShell = uname 
