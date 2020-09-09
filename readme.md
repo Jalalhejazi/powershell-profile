@@ -25,7 +25,15 @@ scoop install googlechrome vscode
 Setup environment, Azure Subscription, Keyvault, docker, git, etc. 
 
 ```powershell
+
+# for windows OS
 cd ${Env:USERPROFILE}\Documents
+
+# for CloudShell (Create Profile for first time)
+
+```powershell
+New-Item -Value $PROFILE -Type File  -Path $PROFILE  -Force
+```
 
 # Delete the PowerShell Folder before clone a new repo
 rm -R PowerShell
