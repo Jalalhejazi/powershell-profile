@@ -18,7 +18,6 @@ function profile-update {
 
 
 function profile-setup {
-   #$ErrorActionPreference = 'SilentlyContinue'
    $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
 
    $isCloudShell = uname 
@@ -34,7 +33,6 @@ function profile-setup {
       git clone $repo
    }
    echo "reload your PowerShell to read $profile"
-   #$ErrorActionPreference = 'stop'
 }
 
 
