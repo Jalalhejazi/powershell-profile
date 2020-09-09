@@ -1,11 +1,10 @@
 ############################################################
 # PowerShell 7 Profile configuration
 ############################################################
-$ErrorActionPreference = 'SilentlyContinue'
 
 $isCloudShell = uname 
 
-if ($isCloudShell) {
+if ($isCloudShell -eq "Linux") {
     $ProfileHOME  = "$home\.config\PowerShell"
 } else {
     $ProfileHOME  = "${Env:USERPROFILE}\Documents\PowerShell"
