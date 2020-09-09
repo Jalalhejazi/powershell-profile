@@ -26,21 +26,29 @@ Setup environment, Azure Subscription, Keyvault, docker, git, etc.
 
 ```powershell
 
-# for windows OS
-cd ${Env:USERPROFILE}\Documents
+function powershell_setup_first_time {
+   $ErrorActionPreference = 'SilentlyContinue'
 
-# for CloudShell (Create Profile for first time)
+   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
 
+   $isCloudShell = uname 
 
-   New-Item -Value $PROFILE -Type File  -Path $PROFILE  -Force
+   if ($isCloudShell) {
+      cd $home
+      mkdir .config
+      cd .config
+      git clone $repo
+   } else {
+      cd "${Env:USERPROFILE}\Documents"
+      git clone $repo
+   }
 
+}
 
-# Delete the PowerShell Folder before clone a new repo
-rm -R PowerShell
+# run the function to setup your PowerShell profile for first time
+powershell_setup_first_time
 
-git clone https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell
-
-# must restart to read $profile configuration
+# must exit/restart PowerShell to read $profile configuration
 exit
 
 # setup environment, then subscription and secret and key management
