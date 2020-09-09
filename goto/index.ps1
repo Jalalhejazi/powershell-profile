@@ -7,11 +7,6 @@ function goto-home {
   cd $ProfileHOME
 }
 
-
-function goto-dev {
-  cd "C:\Dev"
-}
-
 $HOMEPAGE = 'https://www.superusers.dk'
 
 function goto-superusers {
@@ -49,6 +44,4 @@ function goto-github-superusers {
 }
 
 
-
-goto-dev
 
