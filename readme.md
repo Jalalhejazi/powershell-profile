@@ -25,7 +25,6 @@ scoop install googlechrome vscode
 Setup environment, Azure Subscription, Keyvault, docker, git, etc. 
 
 ```powershell
-
 function profile-setup {
    $ErrorActionPreference = 'SilentlyContinue'
    $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
@@ -45,6 +44,7 @@ function profile-setup {
    echo "reload your PowerShell to read $profile"
 }
 
+
 # run the function to setup your PowerShell profile for first time
 profile-setup
 
@@ -57,7 +57,6 @@ env-set azure-keyvault       'azure keyvault to manage secrets and keys'
 
 # start using profile- and tap for auto-complete
 profile-info
-profile-update
+profile-setup
 profile-edit
-
 ```
