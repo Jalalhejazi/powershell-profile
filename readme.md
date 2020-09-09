@@ -32,9 +32,9 @@ function profile-setup {
    $isCloudShell = uname 
    if ($isCloudShell) {
       cd $home
+      Remove-Item -Path .config\ -Recurse -Force
       mkdir .config
       cd .config
-      Remove-Item -Path .\PowerShell\ -Recurse -Force
       git clone $repo
    } else {
       cd "${Env:USERPROFILE}\Documents"
