@@ -22,7 +22,7 @@ function profile-setup {
    $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
 
    $isCloudShell = uname 
-   if ($isCloudShell) {
+   if ($isCloudShell -eq "linux") {
       cd $home
       Remove-Item -Path .config\ -Recurse -Force
       mkdir .config
