@@ -34,6 +34,7 @@ function profile-setup {
       git clone $repo
    }
    echo "reload your PowerShell to read $profile"
+   $ErrorActionPreference = 'Continue'
 }
 
 
