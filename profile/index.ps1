@@ -6,15 +6,10 @@ function profile-ModulePath {
     (cat Env:\PSModulePath) -split ";"
 }
 
-function profile-edit   { code $profilehome }
-function profile-reload { . $profile }
-
-function profile-update { 
-    cd $ProfileHOME
-    git stash  
-    git pull
+function profile-edit   { 
+    cd $profilehome 
+    code .
 }
-
 
 
 function profile-setup {
