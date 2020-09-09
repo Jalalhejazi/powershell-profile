@@ -45,7 +45,7 @@ function profile-setup {
 }
 
 
-# run the function to setup your PowerShell profile for first time
+# run the function profile-setup to download and configure PowerShell profile for windows and Azure-CloudShell
 profile-setup
 
 
