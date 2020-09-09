@@ -2,6 +2,8 @@
 # PowerShell 7 Profile configuration
 ############################################################
 
+$ErrorActionPreference = 'SilentlyContinue'
+
 $isCloudShell = uname 
 
 if ($isCloudShell) {
