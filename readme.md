@@ -37,9 +37,11 @@ function powershell_setup_first_time {
       cd $home
       mkdir .config
       cd .config
+      rm -rf PowerShell
       git clone $repo
    } else {
       cd "${Env:USERPROFILE}\Documents"
+      rm -rf PowerShell
       git clone $repo
    }
 
