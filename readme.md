@@ -35,18 +35,19 @@ function profile-setup {
       cd $home
       mkdir .config
       cd .config
+      Remove-Item -Path .\PowerShell\ -Recurse -Force
       git clone $repo
    } else {
       cd "${Env:USERPROFILE}\Documents"
+      Remove-Item -Path .\PowerShell\ -Recurse -Force
       git clone $repo
    }
+   echo "reload your PowerShell to read $profile"
 }
 
 # run the function to setup your PowerShell profile for first time
 profile-setup
 
-# must exit/restart PowerShell to read $profile configuration
-exit
 
 # setup environment, then subscription and secret and key management
 env-set azure-env            'Deveolpment | Test | Prod'
