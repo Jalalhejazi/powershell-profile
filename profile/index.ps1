@@ -6,9 +6,6 @@ function profile-ModulePath {
     (cat Env:\PSModulePath) -split ";"
 }
 
-function profile-repo {
-    (get-content-from-json  "$ProfileHOME/package.json").repository.url
-}
 function profile-edit   { code $profilehome }
 function profile-reload { . $profile }
 
@@ -19,24 +16,24 @@ function profile-update {
 }
 
 
-function profile-deploy {
-    cd $ProfileHOME
-    git-deploy 
-}
-
-function profile-deploy-all {
-    cd $ProfileHOME
-    env-get dev
-    git-deploy 
-}
-
 
 function profile-setup {
-    cd ${Env:USERPROFILE}\Documents
-    rimraf ./windowspowershell
-    $url = profile-repo
-    git clone $url
-    exit
+   $ErrorActionPreference = 'SilentlyContinue'
+   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
+
+   $isCloudShell = uname 
+   if ($isCloudShell) {
+      cd $home
+      mkdir .config
+      cd .config
+      Remove-Item -Path .\PowerShell\ -Recurse -Force
+      git clone $repo
+   } else {
+      cd "${Env:USERPROFILE}\Documents"
+      Remove-Item -Path .\PowerShell\ -Recurse -Force
+      git clone $repo
+   }
+   echo "reload your PowerShell to read $profile"
 }
 
 
