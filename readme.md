@@ -31,9 +31,9 @@ cd ${Env:USERPROFILE}\Documents
 
 # for CloudShell (Create Profile for first time)
 
-```powershell
-New-Item -Value $PROFILE -Type File  -Path $PROFILE  -Force
-```
+
+   New-Item -Value $PROFILE -Type File  -Path $PROFILE  -Force
+
 
 # Delete the PowerShell Folder before clone a new repo
 rm -R PowerShell
