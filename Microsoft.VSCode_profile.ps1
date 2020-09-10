@@ -2,8 +2,10 @@
 # PowerShell 7 Profile configuration
 ############################################################
 
-
-$isCloudShell = uname 
+try {
+    $isCloudShell = uname 
+}
+catch {}
 
 if ($isCloudShell -eq "Linux") {
     $ProfileHOME  = "$home\.config\PowerShell"
