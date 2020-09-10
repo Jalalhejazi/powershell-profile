@@ -15,7 +15,10 @@ function profile-edit   {
 function profile-setup {
    $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
 
-   $isCloudShell = uname 
+   try {
+       $isCloudShell = uname 
+   }catch {}
+
    if ($isCloudShell -eq "linux") {
       cd $home
       Remove-Item -Path .config\ -Recurse -Force
