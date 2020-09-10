@@ -28,7 +28,10 @@ Setup environment, Azure Subscription, Keyvault, docker, git, etc.
 function profile-setup {
    $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
 
-   $isCloudShell = uname 
+   try {
+       $isCloudShell = uname 
+   }catch {}
+
    if ($isCloudShell -eq "linux") {
       cd $home
       Remove-Item -Path .config\ -Recurse -Force
@@ -42,6 +45,7 @@ function profile-setup {
    }
    echo "reload your PowerShell to read $profile"
 }
+
 
 
 # run the function profile-setup to download and configure PowerShell profile for windows and Azure-CloudShell
