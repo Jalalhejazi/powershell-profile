@@ -43,3 +43,11 @@ function connect-to {
     Start-Process "mstsc" -ArgumentList "/V:$server`:$port /fullscreen /admin " 
 }
     
+
+
+
+
+function connect-to-linux {
+    ssh user@machine0.superusers.dk 
+}
+    
