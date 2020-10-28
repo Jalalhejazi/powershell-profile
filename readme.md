@@ -47,9 +47,20 @@ function profile-setup {
 }
 
 
+function profile-setup-windows {
+   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
+   cd "${Env:USERPROFILE}\Documents"
+   Remove-Item -Path .\PowerShell\ -Recurse -Force
+   git clone $repo
+
+}
+
+
 
 # run the function profile-setup to download and configure PowerShell profile for windows and Azure-CloudShell
-profile-setup
+# profile-setup
+
+profile-setup-windows
 
 
 # setup environment, then subscription and secret and key management
