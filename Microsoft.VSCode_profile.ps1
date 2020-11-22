@@ -8,9 +8,9 @@ try {
 catch {}
 
 if ($isCloudShell -eq "Linux") {
-    $ProfileHOME  = "$home\.config\PowerShell"
+    $ProfileHOME  = "$home\.config\powershell"
 } else {
-    $ProfileHOME  = "${Env:USERPROFILE}\Documents\PowerShell"
+    $ProfileHOME  = "${Env:USERPROFILE}\Documents\powershell"
 }
 
 
