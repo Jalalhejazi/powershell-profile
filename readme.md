@@ -26,7 +26,7 @@ Setup environment, Azure Subscription, Keyvault, docker, git, etc.
 
 ```powershell
 function profile-setup {
-   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
+   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/powershell"
 
    try {
        $isCloudShell = uname 
@@ -34,8 +34,8 @@ function profile-setup {
 
    if ($isCloudShell -eq "linux") {
       cd $home
-      Remove-Item -Path .config\ -Recurse -Force
-      mkdir .config
+      # Remove-Item -Path .config\ -Recurse -Force
+      # mkdir .config
       cd .config
       git clone $repo
    } else {
@@ -48,11 +48,10 @@ function profile-setup {
 
 
 function profile-setup-windows {
-   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
+   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/powershell"
    cd "${Env:USERPROFILE}\Documents"
-   Remove-Item -Path .\PowerShell\ -Recurse -Force
+   Remove-Item -Path .\powershell\ -Recurse -Force
    git clone $repo
-
 }
 
 
