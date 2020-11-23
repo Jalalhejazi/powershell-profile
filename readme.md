@@ -63,7 +63,7 @@ profile-setup-windows
 
 
 # setup environment, then subscription and secret and key management
-env-set azure-env            'Deveolpment | Test | Prod'
+env-set azure-env            'Development | Test | Prod'
 env-set azure-subscription   'subscription for dev, test, prod'
 env-set azure-keyvault       'azure keyvault to manage secrets and keys' 
 
