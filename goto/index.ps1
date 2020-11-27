@@ -44,4 +44,9 @@ function goto-github-superusers {
 }
 
 
+function goto-gist {
+  chrome 'https://gist.githubusercontent.com/Jalalhejazi/c850105a05df85207fbb21b7d1fc52be/raw/56dd185bde7e6feeeed0f1319ce09ce87da1c81f/event-grid-poc'
+}
+
+
 
