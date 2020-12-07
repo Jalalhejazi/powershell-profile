@@ -20,7 +20,7 @@ $IP = if ($IsLinux -or $IsMacOS) {
     }
 }
 else {
-    Get-NetIPAddress | Where-Object {$_.AddressFamily -eq 'IPv4' -and $_ -like '192.*' } | ForEach-Object IPAddress
+    Get-NetIPAddress | Where-Object {$_.AddressFamily -eq 'IPv4'  } | ForEach-Object IPAddress
 }
 
 # Remove loopback address from output regardless of platform
