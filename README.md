@@ -26,7 +26,7 @@ Setup environment, Azure Subscription, Keyvault, docker, git, etc.
 
 ```powershell
 function profile-setup-windows {
-   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/powershell"
+   $repo = "https://dev.azure.com/superusers-kursus/powershell/_git/powershell"
    
    cd "${Env:USERPROFILE}\Documents"
    
@@ -35,11 +35,13 @@ function profile-setup-windows {
    }catch {}
    
    git clone $repo
+
+   echo "reload your PowerShell to read $profile"
 }
 
 
 function profile-setup-linux {
-   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/powershell"
+   $repo = "https://dev.azure.com/superusers-kursus/powershell/_git/powershell"
 
    try {
        $isCloudShell = uname 
