@@ -27,33 +27,23 @@ Setup environment, Azure Subscription, Keyvault, docker, git, etc.
 ```powershell
 function profile-setup-windows {
    $repo = "https://dev.azure.com/superusers-kursus/powershell/_git/powershell"
-   
    cd "${Env:USERPROFILE}\Documents"
    
    try {
-       Remove-Item -Path .\powershell\ -Recurse -Force
-   }catch {}
-   
-   git clone $repo
+      #Remove the old powershell folder if exists and you have permission to delete 
+      Remove-Item -Path .\powershell\ -Recurse -Force
+   }catch {}   
 
+   git clone $repo
    echo "reload your PowerShell to read $profile"
 }
 
 
 function profile-setup-linux {
    $repo = "https://dev.azure.com/superusers-kursus/powershell/_git/powershell"
-
-   try {
-       $isCloudShell = uname 
-   }catch {}
-
-   if ($isCloudShell -eq "linux") {
-      cd $home
-      # Remove-Item -Path .config\ -Recurse -Force
-      # mkdir .config
-      cd .config
-      git clone $repo
-   }
+   cd $home
+   cd .config
+   git clone $repo   
    echo "reload your PowerShell to read $profile"
 }
 
