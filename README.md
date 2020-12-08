@@ -29,11 +29,8 @@ function profile-setup-windows {
    $repo = "https://dev.azure.com/superusers-kursus/powershell/_git/powershell"
    cd "${Env:USERPROFILE}\Documents"
    
-   try {
-      #Remove the old powershell folder if exists and you have permission to delete 
-      Remove-Item -Path .\powershell\ -Recurse -Force
-   }catch {}   
-
+   Remove-Item -Path .\powershell\ -Recurse -Force  -ErrorAction Ignore
+   
    git clone $repo
    echo "reload your PowerShell to read $profile"
 }
