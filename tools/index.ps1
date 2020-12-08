@@ -25,6 +25,7 @@ function scoop-install-utils {
     scoop install concfg 
     scoop install gow 
     scoop install vim 
+    scoop install starship
 }
 
 

@@ -10,8 +10,13 @@ function prompt
         $leftCharCount += 1
     }
 
-    $host.UI.RawUI.WindowTitle = "$pwd  -  time ($time)  - $subscription";
+    # $host.UI.RawUI.WindowTitle = "$pwd  -  time ($time)  - $subscription";
+    $host.UI.RawUI.WindowTitle = "$pwd  -  time ($time)";
    
     return "$ "
 }
 
+# scoop install starship
+# ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+Invoke-Expression (&starship init powershell)
