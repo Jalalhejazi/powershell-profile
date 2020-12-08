@@ -27,7 +27,7 @@ function profile-setup {
       git clone $repo
    } else {
       cd "${Env:USERPROFILE}\Documents"
-      Remove-Item -Path .\PowerShell\ -Recurse -Force
+      Remove-Item -Path .\PowerShell\ -Recurse -Force -ErrorAction SilentlyContinue
       git clone $repo
    }
    echo "reload your PowerShell to read $profile"
