@@ -13,10 +13,6 @@ function goto-superusers {
   chrome incognito "$HOMEPAGE/"
 }
 
-function goto-learning-powershell {
-  chrome --incognito "https://dev.azure.com/superusers-kursus/learning-powershell"
-}
-
 function goto-superusers-kursus {
   param($kursusNummer)
   chrome --incognito "$HOMEPAGE/kursus/$kursusNummer"
@@ -31,6 +27,10 @@ function goto-azure-shell {
 
 function goto-powershell-profile {
   chrome 'https://dev.azure.com/superusers-kursus/PowerShell'
+}
+
+function goto-powershell-kursus {
+  chrome --incognito "https://dev.azure.com/superusers-kursus/learning-powershell"
 }
 
 function goto-google {
