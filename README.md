@@ -1,7 +1,8 @@
 ## PowerShell version 7 (cross-platform) Configuration
 
 
-- Must install PowerShell 7 first
+- Install PowerShell 7 first
+- Install scoop "the missing windows Package Manager"
 
 ```powershell
 # install latest PowerShell 7 (cross-platform)
