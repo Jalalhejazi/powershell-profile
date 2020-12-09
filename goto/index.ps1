@@ -13,8 +13,8 @@ function goto-superusers {
   chrome incognito "$HOMEPAGE/"
 }
 
-function goto-evaluering {
-  chrome --incognito "http://eval.superusers.dk/"
+function goto-learning-powershell {
+  chrome --incognito "https://dev.azure.com/superusers-kursus/learning-powershell"
 }
 
 function goto-superusers-kursus {
