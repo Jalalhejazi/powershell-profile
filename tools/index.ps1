@@ -26,6 +26,7 @@ function scoop-install-utils {
     scoop install gow 
     scoop install vim 
     scoop install starship
+    scoop install windows-terminal
 }
 
 
