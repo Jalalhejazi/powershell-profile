@@ -29,9 +29,7 @@ Setup environment, Azure Subscription, Keyvault, docker, git, etc.
 function profile-setup-windows {
    $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
    cd "${Env:USERPROFILE}\Documents"
-   
    Remove-Item -Path .\powershell\ -Recurse -Force  -ErrorAction Ignore
-   
    git clone $repo
    echo "reload your PowerShell to read $profile"
 }
