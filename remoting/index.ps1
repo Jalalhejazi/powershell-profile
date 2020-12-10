@@ -2,13 +2,15 @@
 
 function windows-remote-connect {
 <#
+. TODO
+https://www.hanselman.com/blog/how-to-ssh-into-a-windows-10-machine-from-linux-or-windows-or-anywhere
 
-    .EXAMPLE
-    windows-remote-connect -ComputerName 192.168.8.101 -UserName kursist -setup
-    
-    
-    .EXAMPLE
-    windows-remote-connect -ComputerName jalal-pc.su.int -UserName su\jalal
+.EXAMPLE
+windows-remote-connect -ComputerName 192.168.8.101 -UserName kursist -setup
+
+
+.EXAMPLE
+windows-remote-connect -ComputerName jalal-pc.su.int -UserName su\jalal
 
 
 #>
