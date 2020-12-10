@@ -14,5 +14,6 @@
 . "$ProfileHOME\host\index.ps1"
 . "$ProfileHOME\remoting\index.ps1"
 . "$ProfileHOME\kursus\index.ps1"
+. "$ProfileHOME\mounting\index.ps1"
 
 . "$ProfileHOME\prompt\index.ps1"
