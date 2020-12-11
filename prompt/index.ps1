@@ -16,7 +16,10 @@ function prompt
     return "$ "
 }
 
+
+function prompt-init {
 # scoop install starship
 # ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
-
 Invoke-Expression (&starship init powershell)
+    
+}
