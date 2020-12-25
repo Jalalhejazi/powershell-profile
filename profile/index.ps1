@@ -13,13 +13,13 @@ function profile-edit   {
 
 
 function profile-setup {
-   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
+   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/powershell/_git/powershell"
 
    try {
        $isCloudShell = uname 
    }catch {}
 
-   if ($isCloudShell -eq "linux") {
+   if ($isCloudShell -eq "linux" -or $isCloudShell -eq "Darwin") {
       cd $home
       Remove-Item -Path .config\ -Recurse -Force
       mkdir .config
