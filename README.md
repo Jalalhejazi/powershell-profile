@@ -23,40 +23,22 @@ scoop install googlechrome vscode
 ```
 
 
-Setup environment, Azure Subscription, Keyvault, docker, git, etc. 
-
-```powershell
-function profile-setup-windows {
-   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
-   cd "${Env:USERPROFILE}\Documents"
-   Remove-Item -Path .\powershell\ -Recurse -Force  -ErrorAction Ignore
-   git clone $repo
-   echo "reload your PowerShell to read $profile"
-}
+# Git Clone this repo 
+copy and paste profile-setup function from the link and run on your terminal, then reload 
+- [run profile-setup from this link ](https://dev.azure.com/superusers-kursus/_git/PowerShell?path=%2Fprofile%2Findex.ps1&version=GBmaster&line=15&lineEnd=34&lineStartColumn=1&lineEndColumn=2&lineStyle=plain&_a=contents)
 
 
-function profile-setup-linux {
-   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/PowerShell/_git/PowerShell"
-   cd $home
-   cd .config
-   git clone $repo   
-   echo "reload your PowerShell to read $profile"
-}
-
-# download and configure PowerShell profile for windows
-profile-setup-windows
-
-# download and configure PowerShell profile for Linux
-profile-setup-linux
 
 
 # setup environment, then subscription and secret and key management
+```
 env-set azure-env            'Development | Test | Prod'
 env-set azure-subscription   'subscription for dev, test, prod'
 env-set azure-keyvault       'azure keyvault to manage secrets and keys' 
-
+```
 
 # start using profile- and tap for auto-complete
+```
 profile-info
 profile-setup
 profile-edit
