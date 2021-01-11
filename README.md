@@ -16,6 +16,7 @@ scoop --version
 scoop install 7zip 
 scoop install git 
 scoop install sudo 
+scoop install azure-cli 
 
 # must add extras for GUI tools like vscode and Google chrome 
 scoop bucket add extras
