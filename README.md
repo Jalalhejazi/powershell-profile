@@ -30,16 +30,22 @@ copy and paste profile-setup function from the link and run on your terminal, th
 
 
 
-# setup environment, then subscription and secret and key management
-```
-env-set azure-env            'Development | Test | Prod'
-env-set azure-subscription   'subscription for dev, test, prod'
-env-set azure-keyvault       'azure keyvault to manage secrets and keys' 
-```
-
 # start using profile- and tap for auto-complete
 ```
 profile-info
 profile-setup
 profile-edit
 ```
+
+
+# Optional Configuration to Azure environment and subscription
+
+### setup environment, then subscription and secret and key management
+```
+env-set azure-env            'Development | Test | Prod'
+env-set azure-subscription   'subscription for dev, test, prod'
+env-set azure-keyvault       'azure keyvault to manage secrets and keys' 
+```
+
+
+
