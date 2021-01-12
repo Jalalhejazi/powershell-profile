@@ -50,21 +50,16 @@ function connect-to {
 
 
 
-function connect-to-linux {
-    ssh user@machine0.superusers.dk 
+function connect-to-ubuntu2020 {
+    ssh sysadmin@ubuntu2020.westeurope.cloudapp.azure.com
 }
 
 
-function connect-to-windows {
+function connect-to-Windows2020 {
 <#
-.DESCRIPTION
-    https://www.hanselman.com/blog/how-to-ssh-into-a-windows-10-machine-from-linux-or-windows-or-anywhere
 
 .EXAMPLE
-connect-to-windows -ComputerName 192.168.8.101 -UserName kursist -setup
-
-.EXAMPLE
-connect-to-windows -ComputerName dev2020.westeurope.cloudapp.azure.com -UserName sysadmin
+connect-to-Windows2020 -ComputerName dev2020.westeurope.cloudapp.azure.com -UserName sysadmin -setup
 
 #>
         
