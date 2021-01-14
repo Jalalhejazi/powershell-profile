@@ -1,4 +1,8 @@
 
+function show-dev2020 {
+    az vm show -g "DEVOPS-ENGINEERS-DEV2020-543870" -n "dev2020" -d
+}
+
 
 function start-dev2020 {
     az vm start -g "DEVOPS-ENGINEERS-DEV2020-543870" -n "dev2020" 
