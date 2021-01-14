@@ -25,6 +25,12 @@ scoop install googlechrome vscode
 
 
 # Git Clone this repo (only works for PowerShell 7)
+
+- works on my Windows 10 (Windows-terminal)
+- works on https://shell.azure.com/powershell
+- works on my Mac (i-terminal)
+- works on my Ubuntu (PowerShell 7)
+
 copy and paste profile-setup function from the link and run on your terminal, then reload 
 - [run profile-setup from this link ](https://dev.azure.com/superusers-kursus/_git/PowerShell?path=%2Fprofile%2Findex.ps1&version=GBmaster&line=15&lineEnd=34&lineStartColumn=1&lineEndColumn=2&lineStyle=plain&_a=contents)
 
