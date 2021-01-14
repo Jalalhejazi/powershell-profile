@@ -1,6 +1,7 @@
 
 function info-dev2020 {
-    write-output "dev2020.westeurope.cloudapp.azure.com"
+    write-output "`n   dev2020.westeurope.cloudapp.azure.com   `n`n"
+    show-dev2020
     get-command -Noun dev2020
 }
 
