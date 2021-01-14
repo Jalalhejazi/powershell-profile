@@ -19,7 +19,7 @@ function profile-setup {
        $isCloudShell = uname 
    }catch {}
 
-   if ($isCloudShell -eq "linux" -or $isCloudShell -eq "Darwin") {
+   if ($isCloudShell -eq "Linux" -or $isCloudShell -eq "Darwin") {
       cd $home
       Remove-Item -Path .config\ -Recurse -Force
       mkdir .config
