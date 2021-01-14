@@ -1,14 +1,10 @@
 
-function info-dev2020 {
+function show-dev2020 {
     write-output "`n   dev2020.westeurope.cloudapp.azure.com   `n`n"
-    show-dev2020
+    az vm show -g "DEVOPS-ENGINEERS-DEV2020-543870" -n "dev2020" -d
+
     get-command -Noun dev2020
 }
-
-function show-dev2020 {
-    az vm show -g "DEVOPS-ENGINEERS-DEV2020-543870" -n "dev2020" -d
-}
-
 
 function start-dev2020 {
     az vm start -g "DEVOPS-ENGINEERS-DEV2020-543870" -n "dev2020" 
