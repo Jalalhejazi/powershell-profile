@@ -11,10 +11,6 @@ function goto-dev {
   cd C:\dev\
 }
 
-function goto-az204 {
-  cd C:\dev\az204-kursus
-}
-
 $HOMEPAGE = 'https://www.superusers.dk'
 
 function goto-superusers {
@@ -47,7 +43,3 @@ function goto-github-superusers {
 }
 
 
-
-
-
-goto-az204
