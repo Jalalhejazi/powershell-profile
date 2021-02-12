@@ -12,6 +12,7 @@ function start-dev2020 {
 
 function stop-dev2020 {
     az vm stop -g "DEVOPS-ENGINEERS-DEV2020-543870" -n "dev2020" 
+    az vm deallocate -g "DEVOPS-ENGINEERS-DEV2020-543870" -n "dev2020"
 }
 
 function restart-dev2020 {
