@@ -10,7 +10,7 @@ catch {}
 if ($isCloudShell -eq "Linux" -or $isCloudShell -eq "Darwin") {
     $ProfileHOME  = "$home\.config\powershell"
 } else {
-    $ProfileHOME  = "${Env:USERPROFILE}\OneDrive - superusers.dk\Documents\powershell"
+    $ProfileHOME  = "${Env:USERPROFILE}\Documents\powershell"
 }
 
 
