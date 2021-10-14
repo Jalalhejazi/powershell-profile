@@ -13,7 +13,7 @@ function profile-edit   {
 
 
 function profile-setup {
-   $repo = "https://superusers-kursus@dev.azure.com/superusers-kursus/powershell/_git/powershell"
+   $repo = "https://github.com/Jalalhejazi/powershell-profile.git"
 
    try {
        $isCloudShell = uname 
