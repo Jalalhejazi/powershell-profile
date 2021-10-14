@@ -15,10 +15,10 @@ function profile-edit   {
 function profile-setup {
    $repo = "https://github.com/Jalalhejazi/powershell-profile.git"
    try {
-       $isCloudShell = uname 
+       $myComputer = uname 
    }catch {}
 
-   if ($isCloudShell -eq "Linux" -or $isCloudShell -eq "Darwin") {
+   if ($myComputer -eq "Linux" -or $myComputer -eq "Darwin") {
       cd $home
       Remove-Item -Path .config\ -Recurse -Force
       mkdir .config
