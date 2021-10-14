@@ -23,10 +23,10 @@ iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
 function profile-setup {
    $repo = "https://github.com/Jalalhejazi/powershell-profile.git"
    try {
-       $isCloudShell = uname 
+       $myComputer = uname 
    }catch {}
 
-   if ($isCloudShell -eq "Linux" -or $isCloudShell -eq "Darwin") {
+   if ($myComputer -eq "Linux" -or $myComputer -eq "Darwin") {
       cd $home
       Remove-Item -Path .config\ -Recurse -Force
       mkdir .config
@@ -57,10 +57,7 @@ profile-edit
 - setup environment, then subscription and secret and key management
 
 ```powershell
-env-set azure-env            'Development | Test | Prod'
-env-set azure-subscription   'subscription for dev, test, prod'
-env-set azure-keyvault       'azure keyvault to manage secrets and keys' 
+env-set azure-env            'Development'
+env-set azure-subscription   'MSDN_950_kr'
+env-set azure-keyvault       '<your azure keyvault account>' 
 ```
-
-
-
