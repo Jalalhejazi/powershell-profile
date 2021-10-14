@@ -30,7 +30,7 @@ function goto-azure-shell {
 }
 
 function goto-powershell-profile {
-  chrome 'https://dev.azure.com/superusers-kursus/PowerShell'
+  chrome 'https://github.com/Jalalhejazi/powershell-profile.git'
 }
 
 function goto-google {
