@@ -31,11 +31,11 @@ function profile-setup {
       Remove-Item -Path .config\ -Recurse -Force
       mkdir .config
       cd .config
-      git clone $repo
+      git clone $repo powershell
    } else {
       cd "${Env:USERPROFILE}\Documents"
       Remove-Item -Path .\PowerShell\ -Recurse -Force -ErrorAction SilentlyContinue
-      git clone $repo
+      git clone $repo powershell
    }
    echo "reload your PowerShell to read $profile"
 }
