@@ -118,3 +118,9 @@ function scoop-info {
     param($appName)
     scoop info $appName
 }
+
+
+function setup-winget {
+    winget install --id Microsoft.dotnet --silent
+    winget list 
+}
