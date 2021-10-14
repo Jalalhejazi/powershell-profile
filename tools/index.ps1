@@ -121,6 +121,8 @@ function scoop-info {
 
 
 function setup-winget {
-    winget install --id Microsoft.dotnet --silent
+    # https://devblogs.microsoft.com/commandline/
+    winget install wingetcreate --silent
+    WinGet install powertoys --silent
     winget list 
 }
