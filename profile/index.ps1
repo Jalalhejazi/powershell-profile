@@ -14,7 +14,6 @@ function profile-edit   {
 
 function profile-setup {
    $repo = "https://github.com/Jalalhejazi/powershell-profile.git"
-
    try {
        $isCloudShell = uname 
    }catch {}
@@ -24,11 +23,11 @@ function profile-setup {
       Remove-Item -Path .config\ -Recurse -Force
       mkdir .config
       cd .config
-      git clone $repo
+      git clone $repo powershell
    } else {
       cd "${Env:USERPROFILE}\Documents"
       Remove-Item -Path .\PowerShell\ -Recurse -Force -ErrorAction SilentlyContinue
-      git clone $repo
+      git clone $repo powershell
    }
    echo "reload your PowerShell to read $profile"
 }
@@ -39,8 +38,9 @@ $TryTheseCommands = @"
     sudo powershell     = (start powershell as admin)
     scoop-install-utils = (install utils tools)
     scoop-install-web   = (install web development tools)
+    scoop-update-all    = (Update every scoop package in this machine)
     profile-edit        = (open profile with vscode for edit)
-    profile-update      = (get latest version from repo)
+    profile-setup       = (clone this repo again)
     scoop list          = (show a list of installed scoop apps)
 "@
 
