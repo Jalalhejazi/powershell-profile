@@ -1,3 +1,13 @@
+
+
+# Press the `.` key
+
+![github dev](https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif)
+
+
+
+
+
 # PowerShell (cross-platform) profile
 
 - Install PowerShell 7 first
