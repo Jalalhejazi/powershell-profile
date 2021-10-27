@@ -121,6 +121,7 @@ function scoop-info {
 
 
 function setup-winget {
+    # just for fun
     # https://devblogs.microsoft.com/commandline/
     winget install wingetcreate --silent
     WinGet install --id Microsoft.PowerToys --silent
