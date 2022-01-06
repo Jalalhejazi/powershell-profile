@@ -6,7 +6,7 @@ function prompt
     $isAdmin = $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
     if ($isAdmin) {
-        Write-Host ("ADMIN ") -nonewline -foregroundcolor DarkYellow -backgroundcolor DarkBlue
+        Write-Host ("ADMIN ") -nonewline -foregroundcolor DarkYellow -backgroundcolor Red
         $leftCharCount += 1
     }
 

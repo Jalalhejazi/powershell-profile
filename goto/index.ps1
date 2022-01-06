@@ -1,8 +1,4 @@
 
-function goto-kursus {
-  cd "$ProfileHOME\kursus"
-}
-
 function goto-home {
   cd $ProfileHOME
 }
@@ -11,22 +7,67 @@ function goto-dev {
   cd C:\dev\
 }
 
-$HOMEPAGE = 'https://www.superusers.dk'
+$HOMEPAGE = 'https://demant.sharepoint.com/Pages/Home.aspx'
 
-function goto-superusers {
-  chrome incognito "$HOMEPAGE/"
+function goto-demant {
+  chrome "$HOMEPAGE/"
 }
 
-function goto-superusers-kursus {
-  param($kursusNummer)
-  chrome --incognito "$HOMEPAGE/kursus/$kursusNummer"
+function goto-sharepoint {
+  chrome "https://demant.sharepoint.com/"
 }
+
+
+function goto-ServiceDesk {
+  chrome "https://servicedesk.demant.com/"
+}
+
+function goto-confluence-Roadmap {
+  chrome "https://confluence.kitenet.com/display/SWSCODE/Roadmap+Subjects"
+}
+
+
+function goto-confluence-SAFE-ART-Device {
+  chrome "https://confluence.kitenet.com/display/HIGSWSDEVICEART/FSW+Device+ART+Setup"
+}
+
+
+Add-Type -TypeDefinition @"
+public enum DemantTags
+    {
+        doc_,
+        git_,
+        build_,
+        project_
+    }
+"@
+
+function goto-demant-tfs-fittingSoftware {
+  <#
+    Future Usage [DemantTags]::$tags 
+  #>
+  
+  param(
+    [String] [ValidateSet("documentation","git","build")] $tag
+  )
+  
+  switch ($tag) {
+    "documentation" { chrome "https://confluence.kitenet.com/pages/viewpage.action?pageId=1182853922" }
+    "git"           { chrome "http://tfs-fs.demant.com:8080/tfs/FittingSoftware/" }
+    "build"         { chrome "https://confluence.kitenet.com/display/SWSCODE/Issues" }
+
+    Default { chrome "https://jira.kitenet.com/secure/RapidBoard.jspa?projectKey=PHOEN&rapidView=1174" }
+  }
+  
+}
+
+
 
 function goto-azure-portal {
-  chrome --incognito 'https://portal.azure.com/'
+  chrome 'https://portal.azure.com/'
 }
 function goto-azure-shell {
-  chrome --incognito 'https://shell.azure.com/'
+  chrome 'https://shell.azure.com/'
 }
 
 function goto-powershell-profile {
@@ -36,10 +77,6 @@ function goto-powershell-profile {
 function goto-google {
   param($search)
   chrome --incognito "https://www.google.com/search?newwindow=1&q=$search"
-}
-
-function goto-github-superusers {
-  chrome 'https://github.com/SuperUsersDK/'
 }
 
 

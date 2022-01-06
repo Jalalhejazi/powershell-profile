@@ -1,6 +1,3 @@
-function goto-azure-dev-angular {
-    chrome --incognito 'https://dev.azure.com/superusers-kursus/angular/'
-}
 
 function goto-angular-homepage {
     chrome --incognito 'https://angular.io/'
