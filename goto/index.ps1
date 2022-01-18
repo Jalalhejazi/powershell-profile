@@ -62,6 +62,19 @@ function goto-demant-tfs-fittingSoftware {
 }
 
 
+function goto-demant-CoDe {
+# https://confluence.kitenet.com/display/SWSCODE/Dashboards
+  chrome "https://confluence.kitenet.com/display/SWSCODE/SWS-CoDe"
+}
+
+
+
+function goto-demant-learningCentral {
+  chrome "https://oticonas.plateau.com/learning/user/personal/landOnPortalHome.do?OWASP_CSRFTOKEN=2QCU-EFPY-A8DR-XUYD-A1WK-J88W-QEQW-IHX2&fromSF=Y&fromDeepLink=true&pageID="
+}
+
+
+
 
 function goto-azure-portal {
   chrome 'https://portal.azure.com/'
