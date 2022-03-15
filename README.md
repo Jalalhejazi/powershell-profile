@@ -38,7 +38,7 @@ function profile-setup {
 
    if ($myComputer -eq "Linux" -or $myComputer -eq "Darwin") {
       cd $home
-      Remove-Item -Path .config\ -Recurse -Force
+      Remove-Item -Path .config\ -Recurse -Force -ErrorAction SilentlyContinue
       mkdir .config
       cd .config
       git clone $repo powershell
