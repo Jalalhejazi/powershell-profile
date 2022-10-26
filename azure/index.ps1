@@ -1,9 +1,9 @@
 <#
     Setup your env:
 
-    env-set azure-env            'dev'
-    env-set azure-subscription   'MSDN_350_Kr'
-    env-set azure-keyvault       'demant2022' 
+    env-set azure-env            'private'
+    env-set azure-subscription   'CoDe-RnD-JAZJ-950KR'
+    env-set azure-keyvault       'zero-trust-keyvault' 
     env-set AZURE_DEVOPS_EXT_PAT ''
 
     env-list azure*

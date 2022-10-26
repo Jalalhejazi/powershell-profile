@@ -93,3 +93,7 @@ function goto-google {
 }
 
 
+function goto-buildDefinitions {
+  cd C:\dev\FittingSoftware\Arizona\Phoenix\Build\BuildDefinitions
+  pwd
+}

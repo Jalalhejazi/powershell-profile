@@ -83,3 +83,20 @@ connect-to-Windows2020 -ComputerName dev2020.westeurope.cloudapp.azure.com -User
     
     ssh $UserName@$ComputerName
 }
+
+$myDemantLinux = "kbnux-jazj.linux.emea.demant.com"
+
+
+function connect-to-demant-linux {
+    
+    <#
+        #1 SMP Debian 5.10.92-1 (2022-01-18) x86_64 GNU/Linux
+        
+        https://confluence.kitenet.com/display/LIIT/Docker+servers+kbnuxgrd01%2C+kbnuxgrd02%2C+...+and+many+others
+
+    #>
+    
+    
+    # -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=ERROR -o ServerAliveInterval=60 -o ServerAliveCountMax=3  -o ConnectionAttempts=3 -o ConnectTimeout=10 -o ControlMaster=no -o ControlPath=none -o ControlPersist=no -o ControlTty=no -o ForwardAgent=no -o ForwardX11=no -o ForwardX11Trusted=no -o GatewayPorts=no -o GlobalKnownHostsFile=/dev/null -o IdentityFile=/home/jazj/.ssh/id_rsa -o LocalForward=      
+    ssh jazj@$myDemantLinux -p 222 
+}

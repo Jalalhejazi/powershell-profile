@@ -24,11 +24,16 @@ function git-set-alias {
 
 function git-set-name {
     param(
-        $name = "dev",
-        $email = "dev@devops.org"
+        $name = "Jalal Hejazi",
+        $email = "jazj@demant.com"
     )
     git config --global user.email $email
     git config --global user.name $name
+}
+
+
+function git-config-list {
+    git config --global --list
 }
 
 
